@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dk10j70bqjrsi"]
+
+[sub_resource type="Curve" id="Curve_3jksf"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.31205675, 0.95969886), 0.0, 0.0, 0, 0, Vector2(0.5460993, 0.78697956), 0.0, 0.0, 0, 0, Vector2(0.78723407, 0.4357838), 0.0, 0.0, 0, 0, Vector2(0.9858156, 0.10185993), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[node name="Node2D" type="Node2D" unique_id=1618806265]
+
+[node name="heartparticles" type="CPUParticles2D" parent="." unique_id=478845067]
+modulate = Color(0.832953, 0.97486895, 0.94505435, 1)
+emitting = false
+lifetime = 0.18000000000000002
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 150.0
+scale_amount_min = 1.5
+scale_amount_max = 1.5
+scale_amount_curve = SubResource("Curve_3jksf")
+color = Color(0.81899464, 0, 0.12078198, 1)

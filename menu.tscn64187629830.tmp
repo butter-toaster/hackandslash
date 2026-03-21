@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://b1p42k6vwiay5"]
+
+[ext_resource type="Texture2D" uid="uid://bau6a6lvo76vw" path="res://images/menu.png" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://0x1gj56hurfp" path="res://scripts/menugeneralscript.gd" id="1_nrnbx"]
+[ext_resource type="StyleBox" uid="uid://ddki8ijvxt11l" path="res://menubuttonpressed.tres" id="2_l48gv"]
+[ext_resource type="Texture2D" uid="uid://c0156pwjg8b5t" path="res://images/buttonbg.png" id="2_ouk20"]
+[ext_resource type="Script" uid="uid://dn5xn27gmc8y7" path="res://scripts/play_button.gd" id="3_mae5d"]
+[ext_resource type="AudioStream" uid="uid://bh47elxiklrgp" path="res://sfx/selectsfx.mp3" id="4_4hy44"]
+[ext_resource type="Script" uid="uid://s10havp5d387" path="res://scripts/fadeouttimer.gd" id="5_ytr4m"]
+[ext_resource type="Script" uid="uid://dxrobm2j7b6ch" path="res://scripts/settings_button.gd" id="7_ecwwl"]
+[ext_resource type="Script" uid="uid://dvenvmsjsotgr" path="res://scripts/settingsclosescript.gd" id="9_iqepy"]
+
+[sub_resource type="Theme" id="Theme_mae5d"]
+default_font_size = 55
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0.044322684, 0.13627505, 0.13259786, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.122005336, 0.3424733, 0.32978296, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+bg_color = Color(0.011477893, 0.06668476, 0.078709416, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+bg_color = Color(0, 0, 0, 0.59607846)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
+bg_color = Color(0.14914, 0.1827192, 0.18574125, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control" unique_id=2066127092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nrnbx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=509048595]
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1120.0
+color = Color(0.014425077, 0.086523004, 0.089683376, 1)
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1804153419]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.22200002
+anchor_bottom = 0.286
+offset_right = 1118.32
+offset_bottom = 796.68
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer" unique_id=1780996209]
+layout_mode = 2
+texture = ExtResource("1_lti8b")
+expand_mode = 3
+
+[node name="PlayButton" type="Button" parent="." unique_id=1150981906]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 607.0
+offset_right = 1128.0
+offset_bottom = 732.0
+theme = SubResource("Theme_mae5d")
+theme_override_colors/font_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.4745098, 0.58431375, 0.54509807, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/pressed = ExtResource("2_l48gv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/hover_pressed = ExtResource("2_l48gv")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_l48gv")
+text = "PLAY"
+icon = ExtResource("2_ouk20")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_mae5d")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer2D" parent="PlayButton" unique_id=847021384]
+stream = ExtResource("4_4hy44")
+pitch_scale = 0.9
+
+[node name="fadeouttimer" type="Timer" parent="PlayButton" unique_id=1545417510]
+wait_time = 2.0
+script = ExtResource("5_ytr4m")
+
+[node name="SettingsButton" type="Button" parent="." unique_id=993583501]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 761.0
+offset_right = 1128.0
+offset_bottom = 886.0
+theme = SubResource("Theme_mae5d")
+theme_override_colors/font_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.4745098, 0.58431375, 0.54509807, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/pressed = ExtResource("2_l48gv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/hover_pressed = ExtResource("2_l48gv")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_l48gv")
+text = "SETTINGS
+"
+icon = ExtResource("2_ouk20")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("7_ecwwl")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer2D" parent="SettingsButton" unique_id=1332860163]
+stream = ExtResource("4_4hy44")
+pitch_scale = 0.9
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1656684387]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1120.0
+mouse_filter = 2
+color = Color(0.0027354525, 0.018116033, 0.019347303, 1)
+
+[node name="LoadingMessage" type="Label" parent="." unique_id=2046047453]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 4.0
+offset_top = 56.0
+offset_right = 1448.0
+offset_bottom = 1172.0
+theme_override_font_sizes/font_size = 70
+text = "LOADING..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="----" type="Node" parent="." unique_id=2062717729]
+
+[node name="overlaydarkening" type="Panel" parent="." unique_id=1650633962]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l48gv")
+
+[node name="SettingsBox" type="MarginContainer" parent="." unique_id=891562946]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 80.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 140
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 140
+
+[node name="settingsbg" type="Panel" parent="SettingsBox" unique_id=379802060]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ecwwl")
+
+[node name="difficultylabel" type="Label" parent="." unique_id=1212033456]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 340.0
+offset_right = 229.0
+offset_bottom = 375.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Difficulty"
+
+[node name="settingslabel" type="Label" parent="." unique_id=2048688057]
+layout_mode = 0
+offset_left = 605.0
+offset_top = 180.0
+offset_right = 835.0
+offset_bottom = 249.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS"
+
+[node name="difficultyselectbutton" type="OptionButton" parent="." unique_id=1757855336]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 337.0
+offset_right = 440.0
+offset_bottom = 380.0
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 25
+selected = 0
+item_count = 2
+popup/item_0/text = "Normal"
+popup/item_0/id = 0
+popup/item_1/text = "Expert"
+popup/item_1/id = 1
+
+[node name="CloseSettingsButton" type="Button" parent="." unique_id=76912937]
+layout_mode = 0
+offset_left = 1284.0
+offset_top = 173.0
+offset_right = 1364.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 50
+text = "X"
+script = ExtResource("9_iqepy")
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_pressed"]
+[connection signal="timeout" from="PlayButton/fadeouttimer" to="PlayButton" method="_on_fadeouttimer_timeout"]
+[connection signal="pressed" from="CloseSettingsButton" to="CloseSettingsButton" method="_on_pressed"]

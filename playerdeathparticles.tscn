@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://qldkjkw3b1xb"]
+
+[sub_resource type="Curve" id="Curve_y4u4x"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.31205675, 0.95969886), 0.0, 0.0, 0, 0, Vector2(0.5460993, 0.78697956), 0.0, 0.0, 0, 0, Vector2(0.78723407, 0.4357838), 0.0, 0.0, 0, 0, Vector2(0.9858156, 0.10185993), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[node name="playerdeathparticles" type="Node2D" unique_id=2071356534]
+
+[node name="playerparticles" type="CPUParticles2D" parent="." unique_id=756390153]
+emitting = false
+amount = 24
+lifetime = 0.3
+one_shot = true
+speed_scale = 2.5
+explosiveness = 1.0
+randomness = 0.51
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 150.0
+scale_amount_max = 5.0
+scale_amount_curve = SubResource("Curve_y4u4x")

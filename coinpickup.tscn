@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://c4umrppbfiesp"]
+
+[ext_resource type="Script" uid="uid://c4sq6irgkxir6" path="res://scripts/coinpickup.gd" id="1_5mgrs"]
+[ext_resource type="Texture2D" uid="uid://2qw8uj3xv0bv" path="res://images/coinpickup.png" id="2_3eetj"]
+[ext_resource type="Texture2D" uid="uid://ct62ai4b4mugb" path="res://images/lightball.png" id="3_3eetj"]
+[ext_resource type="AudioStream" uid="uid://58xyercjxel0" path="res://sfx/coincollectsfx.mp3" id="3_kmiar"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmiar"]
+atlas = ExtResource("2_3eetj")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7l7dg"]
+atlas = ExtResource("2_3eetj")
+region = Rect2(0, 12, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eched"]
+atlas = ExtResource("2_3eetj")
+region = Rect2(0, 24, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi256"]
+atlas = ExtResource("2_3eetj")
+region = Rect2(0, 36, 12, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1swlo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmiar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7l7dg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eched")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bi256")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mm7sn"]
+radius = 7.0
+
+[node name="Coin" type="Node2D" unique_id=593510990]
+script = ExtResource("1_5mgrs")
+
+[node name="coinasprite" type="AnimatedSprite2D" parent="." unique_id=1579126151]
+sprite_frames = SubResource("SpriteFrames_1swlo")
+autoplay = "default"
+
+[node name="coincoll" type="Area2D" parent="." unique_id=1453462553]
+
+[node name="coinbox" type="CollisionShape2D" parent="coincoll" unique_id=1422154848]
+shape = SubResource("CircleShape2D_mm7sn")
+
+[node name="coincollectsfx" type="AudioStreamPlayer" parent="." unique_id=425088009]
+stream = ExtResource("3_kmiar")
+volume_db = -6.651
+
+[node name="glimmer" type="PointLight2D" parent="." unique_id=1636583012]
+position = Vector2(-1.1920929e-07, -7.1525574e-07)
+scale = Vector2(0.12999998, 0.14)
+color = Color(0.81960785, 0.9019608, 0, 1)
+energy = 0.0
+texture = ExtResource("3_3eetj")
+
+[connection signal="body_entered" from="coincoll" to="." method="_on_coincoll_body_entered"]

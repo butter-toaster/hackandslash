@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://c8xbwmlltg15x"]
+
+[ext_resource type="Script" uid="uid://ddvk7l3ancvce" path="res://scripts/crate.gd" id="1_mo0jf"]
+[ext_resource type="Texture2D" uid="uid://b0w5lmrjd37o5" path="res://images/crate.png" id="1_uep05"]
+[ext_resource type="Texture2D" uid="uid://d23hhkdiypqo8" path="res://images/cratefragment.png" id="3_44j4e"]
+[ext_resource type="Texture2D" uid="uid://t7fqgs40s8m2" path="res://images/cratefragment2.png" id="4_c7plm"]
+[ext_resource type="AudioStream" uid="uid://qlmato5gm5ro" path="res://sfx/coinappearsfx.mp3" id="5_c7plm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uep05"]
+size = Vector2(18, 18)
+
+[sub_resource type="Gradient" id="Gradient_uxllr"]
+offsets = PackedFloat32Array(0, 0.44672132, 1)
+colors = PackedColorArray(0.4710362, 0.6678133, 0.70052505, 1, 0.7294118, 0.85882354, 0.8862745, 0.6313726, 1, 1, 1, 0)
+
+[sub_resource type="Curve" id="Curve_44j4e"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5106288), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="crate" type="Node2D" unique_id=1069377445]
+script = ExtResource("1_mo0jf")
+
+[node name="cratesprite" type="Sprite2D" parent="." unique_id=1814148547]
+texture = ExtResource("1_uep05")
+
+[node name="cratehittrig" type="Area2D" parent="." unique_id=972247562]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cratehittrig" unique_id=976941572]
+shape = SubResource("RectangleShape2D_uep05")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="tinyfragments" type="CPUParticles2D" parent="." unique_id=186601239]
+position = Vector2(3, 4)
+emitting = false
+amount = 3
+texture = ExtResource("3_44j4e")
+lifetime = 0.25
+one_shot = true
+explosiveness = 1.0
+randomness = 0.13
+direction = Vector2(0, -2000)
+spread = 54.47
+gravity = Vector2(0, 2500)
+initial_velocity_min = 480.26
+initial_velocity_max = 578.94
+color_ramp = SubResource("Gradient_uxllr")
+
+[node name="bigfragments" type="CPUParticles2D" parent="." unique_id=568802097]
+position = Vector2(-2, -2)
+emitting = false
+amount = 2
+texture = ExtResource("4_c7plm")
+lifetime = 0.2
+one_shot = true
+explosiveness = 1.0
+randomness = 0.33
+direction = Vector2(1, -2000)
+spread = 61.58
+gravity = Vector2(0, 2500)
+initial_velocity_min = 368.41
+initial_velocity_max = 453.94
+color_ramp = SubResource("Gradient_uxllr")
+
+[node name="sparks" type="CPUParticles2D" parent="." unique_id=1372074519]
+position = Vector2(-2, -2)
+emitting = false
+amount = 9
+lifetime = 0.15000000000000002
+one_shot = true
+explosiveness = 1.0
+randomness = 0.23
+direction = Vector2(2000, 0)
+spread = 25.0
+gravity = Vector2(0, 1250)
+initial_velocity_min = 380.0
+initial_velocity_max = 400.0
+scale_amount_min = 2.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_44j4e")
+color_ramp = SubResource("Gradient_uxllr")
+
+[node name="cratesfx" type="AudioStreamPlayer" parent="." unique_id=658124863]
+volume_db = -9.731
+
+[node name="coinappearsfx" type="AudioStreamPlayer" parent="." unique_id=519829380]
+stream = ExtResource("5_c7plm")
+volume_db = -20.0
+
+[connection signal="area_shape_entered" from="cratehittrig" to="." method="_on_cratehittrig_area_shape_entered"]

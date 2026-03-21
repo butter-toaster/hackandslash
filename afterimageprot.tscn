@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cwutoejw6trb8"]
+
+[ext_resource type="Script" uid="uid://c60px7i4tialr" path="res://scripts/afterimageprot.gd" id="1_uy3ua"]
+[ext_resource type="Texture2D" uid="uid://ck432ldx246xb" path="res://images/protagonist.png" id="2_js02j"]
+
+[node name="afterimageprot" type="Node2D" unique_id=1111558854]
+script = ExtResource("1_uy3ua")
+
+[node name="afterimagesprite" type="Sprite2D" parent="." unique_id=780122026]
+modulate = Color(1, 1, 1, 0.78039217)
+texture = ExtResource("2_js02j")

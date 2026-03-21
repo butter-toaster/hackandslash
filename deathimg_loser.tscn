@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ceqqovkpmsfl0"]
+
+[ext_resource type="Script" uid="uid://co2wsu3nbh8g6" path="res://scripts/deathimg_bat.gd" id="1_mlwyl"]
+[ext_resource type="Texture2D" uid="uid://bbplpabfphicm" path="res://images/loser_deathimg.png" id="2_mlwyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wacwx"]
+atlas = ExtResource("2_mlwyl")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_io0l1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wacwx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="deathimg_bat" type="Node2D" unique_id=1883122776]
+script = ExtResource("1_mlwyl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=281044333]
+sprite_frames = SubResource("SpriteFrames_io0l1")
+autoplay = "default"

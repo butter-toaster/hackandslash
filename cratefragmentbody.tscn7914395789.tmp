@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cwcdvl0qvpxln"]
+
+[ext_resource type="Script" uid="uid://dnu8kubt2wusv" path="res://fragmentbody.gd" id="1_qdrar"]
+[ext_resource type="Texture2D" uid="uid://t7fqgs40s8m2" path="res://images/cratefragment2.png" id="2_6qiu6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qdrar"]
+radius = 2.0
+
+[node name="cratefragmentbody" type="Node2D" unique_id=182910267]
+
+[node name="fragmentbody" type="CharacterBody2D" parent="." unique_id=194731769]
+collision_layer = 2
+slide_on_ceiling = false
+floor_max_angle = 0.0
+platform_on_leave = 2
+script = ExtResource("1_qdrar")
+
+[node name="Sprite2D" type="Sprite2D" parent="fragmentbody" unique_id=1226156701]
+texture = ExtResource("2_6qiu6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fragmentbody" unique_id=206486368]
+position = Vector2(2, 3)
+shape = SubResource("CircleShape2D_qdrar")
+debug_color = Color(0, 0.6, 0.69803923, 0.02745098)

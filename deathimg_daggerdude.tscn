@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cso43m8xuquuk"]
+
+[ext_resource type="Script" uid="uid://co2wsu3nbh8g6" path="res://scripts/deathimg_bat.gd" id="1_o1ovj"]
+[ext_resource type="Texture2D" uid="uid://cwm4ghn5tx518" path="res://images/daggerdude_deathimg.png" id="2_o1ovj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3homb"]
+atlas = ExtResource("2_o1ovj")
+region = Rect2(0, 0, 48, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rfjs"]
+atlas = ExtResource("2_o1ovj")
+region = Rect2(0, 16, 48, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kchhl"]
+atlas = ExtResource("2_o1ovj")
+region = Rect2(0, 32, 48, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_42l7c"]
+atlas = ExtResource("2_o1ovj")
+region = Rect2(0, 48, 48, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_psf2u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3homb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rfjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kchhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_42l7c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="deathimg_daggerdude" type="Node2D" unique_id=1883122776]
+script = ExtResource("1_o1ovj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=281044333]
+sprite_frames = SubResource("SpriteFrames_psf2u")
+autoplay = "default"

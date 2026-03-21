@@ -1,0 +1,3263 @@
+[gd_scene format=3 uid="uid://b1p42k6vwiay5"]
+
+[ext_resource type="Texture2D" uid="uid://bau6a6lvo76vw" path="res://images/menu.png" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://0x1gj56hurfp" path="res://scripts/menugeneralscript.gd" id="1_nrnbx"]
+[ext_resource type="Script" uid="uid://dgx07jrseqc6p" path="res://scripts/achievementhandler.gd" id="2_g8u3f"]
+[ext_resource type="StyleBox" uid="uid://ddki8ijvxt11l" path="res://menubuttonpressed.tres" id="2_l48gv"]
+[ext_resource type="Texture2D" uid="uid://c0156pwjg8b5t" path="res://images/buttonbg.png" id="2_ouk20"]
+[ext_resource type="AudioStream" uid="uid://bsbjvbdqs5cc6" path="res://sfx/apertureahhbeat (2).mp3" id="2_rkpqm"]
+[ext_resource type="Script" uid="uid://dg037w06s6pav" path="res://scripts/menuthemescript.gd" id="3_7wriu"]
+[ext_resource type="AudioStream" uid="uid://c0qubpb38hxmi" path="res://sfx/normalsfx.mp3" id="3_jspdm"]
+[ext_resource type="Script" uid="uid://dn5xn27gmc8y7" path="res://scripts/play_button.gd" id="3_mae5d"]
+[ext_resource type="Script" uid="uid://dhmnajjfqgxmb" path="res://transhandler.gd" id="3_oha31"]
+[ext_resource type="AudioStream" uid="uid://bh47elxiklrgp" path="res://sfx/selectsfx.mp3" id="4_4hy44"]
+[ext_resource type="Texture2D" uid="uid://b8i15y23cud6b" path="res://images/menufade.png" id="5_8uog0"]
+[ext_resource type="AudioStream" uid="uid://lrx426qyjby8" path="res://sfx/toggleonsfx.mp3" id="5_k1fdc"]
+[ext_resource type="Texture2D" uid="uid://dvsi4leti6nw" path="res://images/bgfootage_spritesheet.png" id="5_oil5j"]
+[ext_resource type="Script" uid="uid://s10havp5d387" path="res://scripts/fadeouttimer.gd" id="5_ytr4m"]
+[ext_resource type="AudioStream" uid="uid://8vcgvsrbep0l" path="res://sfx/toggleoffsfx.mp3" id="6_su4y3"]
+[ext_resource type="Script" uid="uid://dxrobm2j7b6ch" path="res://scripts/settings_button.gd" id="7_ecwwl"]
+[ext_resource type="StyleBox" uid="uid://beaeak74ila45" path="res://menubuttonnormal.tres" id="7_rkpqm"]
+[ext_resource type="AudioStream" uid="uid://bke2p5bjn2ftx" path="res://sfx/debugopensfx.mp3" id="7_w0s3i"]
+[ext_resource type="AudioStream" uid="uid://b5cf5hhtea086" path="res://sfx/debugclosesfx.mp3" id="8_3kqnc"]
+[ext_resource type="StyleBox" uid="uid://drnpnqvjdj54q" path="res://menubuttonhovered.tres" id="9_7wriu"]
+[ext_resource type="Script" uid="uid://d2n6re8gob136" path="res://scripts/mastervolumesliderscript.gd" id="9_h1wq0"]
+[ext_resource type="Script" uid="uid://dvenvmsjsotgr" path="res://scripts/settingsclosescript.gd" id="9_iqepy"]
+[ext_resource type="AudioStream" uid="uid://dd5lb277whbr3" path="res://sfx/achunlockedsfx.mp3" id="10_dl4fq"]
+[ext_resource type="Script" uid="uid://mhb3dro8fgic" path="res://scripts/difficultyselectbuttonscript.gd" id="10_dwrpx"]
+[ext_resource type="AudioStream" uid="uid://beke5qvpwq0td" path="res://sfx/shopscrollsfx.mp3" id="12_g7tms"]
+[ext_resource type="Texture2D" uid="uid://behf2ldl6afdu" path="res://images/controlsguide.png" id="13_jspdm"]
+[ext_resource type="AudioStream" uid="uid://cphn1m6qnls7i" path="res://sfx/perkhoversfx.mp3" id="13_s0svo"]
+[ext_resource type="FontFile" uid="uid://3yjcomf5oab7" path="res://PixeloidMono.ttf" id="14_dgv8b"]
+[ext_resource type="Texture2D" uid="uid://4rwhcgord50l" path="res://images/controlsguide_a.png" id="14_guify"]
+[ext_resource type="Texture2D" uid="uid://dpesdaqoua58t" path="res://images/controlsguide_d.png" id="15_oil5j"]
+[ext_resource type="Texture2D" uid="uid://tiyjlslhcfl0" path="res://images/controlsguide_space.png" id="16_8uog0"]
+[ext_resource type="FontFile" uid="uid://kjoph4t7xl2q" path="res://Evil Empire.otf" id="16_rlonj"]
+[ext_resource type="Texture2D" uid="uid://c2f4gbrch5tp3" path="res://images/controlsguide_q.png" id="17_k5x1w"]
+[ext_resource type="Texture2D" uid="uid://brmnrcye2vqk7" path="res://images/controlsguide_p.png" id="18_rkpqm"]
+[ext_resource type="Texture2D" uid="uid://bblogbilnv7d0" path="res://images/controlsguide_shift.png" id="19_7wriu"]
+[ext_resource type="Texture2D" uid="uid://ddt5hdjbgj8y" path="res://images/loading_animation_spritesheet.png" id="20_tnkdk"]
+[ext_resource type="Texture2D" uid="uid://bv6xwkovciyyp" path="res://images/controlsguide_mouse.png" id="20_xhgcl"]
+[ext_resource type="Texture2D" uid="uid://bwrr3h0lul4ka" path="res://images/controlsguide_k.png" id="21_8tnp7"]
+[ext_resource type="Script" uid="uid://dk6t47peak8mi" path="res://menuachievements_button.gd" id="22_xmvw1"]
+[ext_resource type="Texture2D" uid="uid://b3rr8md45vhns" path="res://images/achievementsicon.png" id="23_dgv8b"]
+[ext_resource type="Texture2D" uid="uid://ck432ldx246xb" path="res://images/protagonist.png" id="28_xhgcl"]
+[ext_resource type="Script" uid="uid://dxwv8hotrr6sa" path="res://scripts/debugmenubutton.gd" id="29_8tnp7"]
+[ext_resource type="Texture2D" uid="uid://dj2pgv1b405mw" path="res://images/debugsettings.png" id="31_8lmdq"]
+[ext_resource type="FontFile" uid="uid://b8jnkxdjby03x" path="res://images/monogram.ttf" id="32_m2id3"]
+[ext_resource type="Script" uid="uid://cttyy7o06ekuq" path="res://scripts/perkdebugtoggle.gd" id="33_su4y3"]
+[ext_resource type="Script" uid="uid://cgctlj13jui67" path="res://scripts/juliendebugtoggle.gd" id="34_xisss"]
+[ext_resource type="Script" uid="uid://c54egtu1l51q4" path="res://scripts/blinddebugtoggle.gd" id="35_5e35a"]
+[ext_resource type="Script" uid="uid://yret0r4fjv8d" path="res://scripts/invincdebugtoggle.gd" id="36_5e35a"]
+[ext_resource type="Script" uid="uid://c2vvfljatcs5n" path="res://scripts/heartsdebugtoggle.gd" id="37_snj3a"]
+[ext_resource type="Script" uid="uid://3l8abcv2g0xi" path="res://scripts/enemyspeedslider.gd" id="40_3kqnc"]
+[ext_resource type="Script" uid="uid://b8gt8bapu3fx6" path="res://scripts/playerspeedslider.gd" id="41_28d1b"]
+[ext_resource type="Script" uid="uid://ic5lj0kbjjnu" path="res://scripts/scoremultiplierslider.gd" id="42_bhlom"]
+[ext_resource type="FontFile" uid="uid://ckp1of4er2uco" path="res://monogram.ttf" id="45_x5sqb"]
+[ext_resource type="Script" uid="uid://bmv55o83vsdom" path="res://scripts/playhovermode.gd" id="46_ciy7n"]
+[ext_resource type="Script" uid="uid://1l4eg65m0pjl" path="res://scripts/playhoverhs.gd" id="47_ciy7n"]
+[ext_resource type="Texture2D" uid="uid://dfkiw04iw8d32" path="res://images/achtab.png" id="50_dl4fq"]
+[ext_resource type="Texture2D" uid="uid://bmey53io6ionf" path="res://images/monsterbroom.png" id="51_8bala"]
+[ext_resource type="Script" uid="uid://d13l13mq7nbac" path="res://scripts/openachbutton.gd" id="52_xmvw1"]
+[ext_resource type="Texture2D" uid="uid://deiy8nc4mq4es" path="res://images/expertprotagonist.png" id="53_dgv8b"]
+[ext_resource type="Texture2D" uid="uid://cvmrflqbtam0b" path="res://images/julien2.png" id="54_oha31"]
+[ext_resource type="Texture2D" uid="uid://c5sdpt7pcqquq" path="res://images/scoreaddict.png" id="55_41fha"]
+[ext_resource type="Texture2D" uid="uid://cxpjr0625f6gj" path="res://images/heartbroken.png" id="56_lrhmk"]
+[ext_resource type="Texture2D" uid="uid://bhdcntq3nb4vy" path="res://images/loser.png" id="57_pyh72"]
+[ext_resource type="Texture2D" uid="uid://4ho7alynfgde" path="res://images/secretroomicon.png" id="58_ay07r"]
+[ext_resource type="Texture2D" uid="uid://xcxi1ogbkawp" path="res://images/moralesscore.png" id="59_5yl2w"]
+[ext_resource type="Texture2D" uid="uid://cgg82bn2wqcha" path="res://images/fate.png" id="60_f82t3"]
+[ext_resource type="Script" uid="uid://m8r8yuku2bkt" path="res://scripts/closeachbutton.gd" id="61_g7tms"]
+[ext_resource type="Texture2D" uid="uid://duwuimqcwymxa" path="res://images/shopkeep.png" id="67_41fha"]
+[ext_resource type="Script" uid="uid://dymulrsnqoq0" path="res://permaperkshop.gd" id="67_f82t3"]
+[ext_resource type="Texture2D" uid="uid://brno2wctaowqq" path="res://images/shopkeep_bar.png" id="68_5yl2w"]
+[ext_resource type="Texture2D" uid="uid://gd0s8qwksmlf" path="res://images/shopkeep_bar_sword.png" id="69_f82t3"]
+[ext_resource type="Texture2D" uid="uid://cjvgllcequlfg" path="res://images/shopkeep_bar_shield.png" id="70_g7tms"]
+[ext_resource type="Texture2D" uid="uid://d1vbkypg22nsa" path="res://images/shopkeep_bar_talisman.png" id="71_65flr"]
+[ext_resource type="Texture2D" uid="uid://dkpn28i2nwx17" path="res://images/charm_onyx.png" id="74_65flr"]
+[ext_resource type="Script" uid="uid://c7oimx08xc4pv" path="res://shopitem.gd" id="74_sowed"]
+[ext_resource type="Texture2D" uid="uid://cblwfo4g8s5s3" path="res://images/coin.png" id="77_r8j3e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oil5j"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uog0"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5x1w"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkpqm"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wriu"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhgcl"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tnp7"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rlonj"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5jqm"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lmdq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2id3"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1fdc"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_su4y3"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8pol"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xisss"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e35a"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 675, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snj3a"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 675, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c770m"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 675, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0s3i"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 675, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kqnc"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 675, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lo2je"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 900, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28d1b"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 900, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhlom"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 900, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5sqb"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 900, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciy7n"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 900, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnkdk"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 1125, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o4uf"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 1125, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1y2i"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 1125, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb2su"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 1125, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wi06"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 1125, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i641"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 1350, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wodf"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 1350, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2708"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 1350, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwl3b"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 1350, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1ows"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 1350, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xags"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 1575, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyyhw"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 1575, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyv6s"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 1575, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8u3f"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 1575, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl4fq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 1575, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bala"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 1800, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmvw1"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 1800, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgv8b"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 1800, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oha31"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 1800, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41fha"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 1800, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrhmk"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 2025, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyh72"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 2025, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay07r"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 2025, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yl2w"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 2025, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f82t3"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 2025, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7tms"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 2250, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65flr"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 2250, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sowed"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 2250, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0svo"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 2250, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8j3e"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 2250, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_leosr"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 2475, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vouk"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 2475, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqdwd"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 2475, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xm076"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 2475, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftmlt"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 2475, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrf1l"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 2700, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8urp"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 2700, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yekiq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 2700, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4y7eq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 2700, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5h04"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 2700, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8wwj"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 2925, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utgpq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 2925, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xaue"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 2925, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kw7jn"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 2925, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01ei4"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 2925, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rxbt"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 3150, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4p6n"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 3150, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ky8ht"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 3150, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tqjx"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 3150, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_but5n"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 3150, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gx31"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 3375, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ky5jl"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 3375, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khyif"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 3375, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7215o"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 3375, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ego87"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 3375, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0y64"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 3600, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsy3m"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 3600, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpia6"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 3600, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krrev"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 3600, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhb05"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 3600, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm4gb"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 3825, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atyq7"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 3825, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke3wa"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 3825, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sita"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 3825, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqbsq"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 3825, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj2wd"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 4050, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx85p"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 4050, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26d4b"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 4050, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24lvd"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 4050, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkyd5"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 4050, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4yw4"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 4275, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pllh"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 4275, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tti7s"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 4275, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0ocs"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 4275, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3o2t"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 4275, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64s11"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 4500, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1355"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 4500, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fi128"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 4500, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cla3e"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 4500, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yv3ft"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 4500, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jljvj"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 4725, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tni7q"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 4725, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nm238"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 4725, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bxu8"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 4725, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u7kr"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 4725, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr4gt"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 4950, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbfn8"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 4950, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t50ny"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 4950, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0m16"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 4950, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myq77"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 4950, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1iyf8"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 5175, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kd70d"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 5175, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0okg"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 5175, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ktll"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 5175, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3umt"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 5175, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clhwl"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(0, 5400, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i02my"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(400, 5400, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v48c0"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(800, 5400, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wihk5"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1200, 5400, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40wh2"]
+atlas = ExtResource("5_oil5j")
+region = Rect2(1600, 5400, 400, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i02my"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oil5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uog0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5x1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkpqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wriu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhgcl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8tnp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rlonj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5jqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lmdq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2id3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1fdc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_su4y3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c8pol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xisss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e35a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snj3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c770m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0s3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kqnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lo2je")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28d1b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhlom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5sqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ciy7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnkdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o4uf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1y2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb2su")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wi06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3i641")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wodf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2708")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwl3b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1ows")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xags")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyyhw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyv6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8u3f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl4fq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bala")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmvw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgv8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oha31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41fha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrhmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyh72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay07r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yl2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f82t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7tms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65flr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sowed")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0svo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8j3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_leosr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vouk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqdwd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xm076")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftmlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrf1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8urp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yekiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4y7eq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5h04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8wwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utgpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xaue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kw7jn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01ei4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rxbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4p6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ky8ht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tqjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_but5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gx31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ky5jl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khyif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7215o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ego87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0y64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsy3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpia6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krrev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhb05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm4gb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atyq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke3wa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sita")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqbsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj2wd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx85p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26d4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24lvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkyd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4yw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pllh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tti7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0ocs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3o2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64s11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a1355")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fi128")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cla3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yv3ft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jljvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tni7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nm238")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bxu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u7kr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hr4gt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbfn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t50ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0m16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myq77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1iyf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kd70d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0okg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ktll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3umt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clhwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i02my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v48c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wihk5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40wh2")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 15.0
+}]
+
+[sub_resource type="Theme" id="Theme_oha31"]
+default_font_size = 55
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jepmg"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d574"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmlke"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgbok"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5tl8w"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qwjh"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvijt"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmpar"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df5fs"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrc2n"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6vmf"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4ic2"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hdl5"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnaly"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gv44"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibodx"]
+atlas = ExtResource("20_tnkdk")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dgv8b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jepmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d574")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmlke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgbok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5tl8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qwjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvijt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmpar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df5fs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrc2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6vmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4ic2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hdl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnaly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gv44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibodx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+bg_color = Color(0, 0, 0, 0.7294118)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
+bg_color = Color(0.14914, 0.1827192, 0.18574125, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1wq0"]
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.6)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v1rc"]
+atlas = ExtResource("31_8lmdq")
+region = Rect2(0, 0, 200, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sqrg"]
+atlas = ExtResource("31_8lmdq")
+region = Rect2(0, 80, 200, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i1mhs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0v1rc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6sqrg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.5
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g8u3f"]
+bg_color = Color(0.007090749, 0.0069224127, 0.020126827, 0.50980395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dl4fq"]
+bg_color = Color(0.011764706, 0.07450981, 0.078431375, 0.8627451)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bala"]
+bg_color = Color(0.061347827, 0.14962313, 0.15726843, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xmvw1"]
+bg_color = Color(0.003921569, 0.03529412, 0.05490196, 0.78431374)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8j3e"]
+bg_color = Color(0, 0, 0, 0.11764706)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0svo"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_leosr"]
+bg_color = Color(0, 0, 0, 0.4627451)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oha31"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_41fha"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jepmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d574")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmlke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgbok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5tl8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qwjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvijt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmpar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df5fs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrc2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6vmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4ic2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hdl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnaly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gv44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibodx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Control" type="Control" unique_id=2066127092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nrnbx")
+
+[node name="ACHIEVEMENTHANDLER" type="Node" parent="." unique_id=1635953125]
+unique_name_in_owner = true
+script = ExtResource("2_g8u3f")
+
+[node name="TRANSHANDLER" type="Node" parent="." unique_id=589008695]
+unique_name_in_owner = true
+script = ExtResource("3_oha31")
+
+[node name="menutheme" type="AudioStreamPlayer" parent="." unique_id=532636262]
+unique_name_in_owner = true
+stream = ExtResource("2_rkpqm")
+volume_db = -4.0
+bus = &"Music"
+script = ExtResource("3_7wriu")
+
+[node name="dropdownswitchplayer" type="AudioStreamPlayer" parent="." unique_id=1438082196]
+unique_name_in_owner = true
+stream = ExtResource("3_jspdm")
+volume_db = 0.5
+pitch_scale = 1.3
+
+[node name="toggleonsfx" type="AudioStreamPlayer" parent="." unique_id=1824143389]
+unique_name_in_owner = true
+stream = ExtResource("5_k1fdc")
+volume_db = -10.0
+pitch_scale = 1.3
+
+[node name="toggleoffsfx" type="AudioStreamPlayer" parent="." unique_id=2023007251]
+unique_name_in_owner = true
+stream = ExtResource("6_su4y3")
+volume_db = -10.0
+pitch_scale = 1.3
+
+[node name="debugopensfx" type="AudioStreamPlayer" parent="." unique_id=379692609]
+unique_name_in_owner = true
+stream = ExtResource("7_w0s3i")
+volume_db = -5.0
+pitch_scale = 1.3
+
+[node name="debugclosesfx" type="AudioStreamPlayer" parent="." unique_id=965129843]
+unique_name_in_owner = true
+stream = ExtResource("8_3kqnc")
+volume_db = -5.0
+pitch_scale = 1.3
+
+[node name="achunlockedsfx" type="AudioStreamPlayer" parent="." unique_id=1433738297]
+unique_name_in_owner = true
+stream = ExtResource("10_dl4fq")
+
+[node name="shopscrollsfx" type="AudioStreamPlayer" parent="." unique_id=605844674]
+unique_name_in_owner = true
+stream = ExtResource("12_g7tms")
+volume_db = 7.5
+
+[node name="itemhoversfx" type="AudioStreamPlayer" parent="." unique_id=232195211]
+unique_name_in_owner = true
+stream = ExtResource("13_s0svo")
+volume_db = -21.257
+pitch_scale = 0.81
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=509048595]
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1120.0
+color = Color(0.014425077, 0.086523004, 0.089683376, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=968282733]
+position = Vector2(724.50006, 832)
+scale = Vector2(4.9775, 4.3288884)
+sprite_frames = SubResource("SpriteFrames_i02my")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame = 55
+frame_progress = 0.46867156
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1016499473]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 342.0
+offset_right = 1455.0
+offset_bottom = 2025.0
+texture = ExtResource("5_8uog0")
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1804153419]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.22200002
+anchor_bottom = 0.286
+offset_right = 1118.32
+offset_bottom = 796.68
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer" unique_id=1780996209]
+layout_mode = 2
+texture = ExtResource("1_lti8b")
+expand_mode = 3
+
+[node name="PlayButton" type="Button" parent="." unique_id=749112415]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 607.0
+offset_right = 1128.0
+offset_bottom = 732.0
+focus_mode = 0
+theme = SubResource("Theme_oha31")
+theme_override_colors/font_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.4745098, 0.58431375, 0.54509807, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_dgv8b")
+theme_override_styles/normal = ExtResource("7_rkpqm")
+theme_override_styles/pressed = ExtResource("2_l48gv")
+theme_override_styles/hover = ExtResource("9_7wriu")
+theme_override_styles/hover_pressed = ExtResource("2_l48gv")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_l48gv")
+text = "PLAY"
+icon = ExtResource("2_ouk20")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_mae5d")
+
+[node name="fadeouttimer" type="Timer" parent="PlayButton" unique_id=398767872]
+wait_time = 2.0
+script = ExtResource("5_ytr4m")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="PlayButton" unique_id=748803443]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="SettingsButton" type="Button" parent="." unique_id=239695683]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 761.0
+offset_right = 935.0
+offset_bottom = 886.0
+focus_mode = 0
+theme = SubResource("Theme_oha31")
+theme_override_colors/font_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.4745098, 0.58431375, 0.54509807, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_dgv8b")
+theme_override_styles/normal = ExtResource("7_rkpqm")
+theme_override_styles/pressed = ExtResource("2_l48gv")
+theme_override_styles/hover = ExtResource("9_7wriu")
+theme_override_styles/hover_pressed = ExtResource("2_l48gv")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_l48gv")
+text = "SETTINGS
+"
+icon = ExtResource("2_ouk20")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("7_ecwwl")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="SettingsButton" unique_id=1966541357]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="AchievementsButton" type="Button" parent="." unique_id=1333934903]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 761.0
+offset_right = 1128.0
+offset_bottom = 886.0
+focus_mode = 0
+theme = SubResource("Theme_oha31")
+theme_override_colors/font_color = Color(0.12156863, 0.34117648, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.4745098, 0.58431375, 0.54509807, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_rkpqm")
+theme_override_styles/pressed = ExtResource("2_l48gv")
+theme_override_styles/hover = ExtResource("9_7wriu")
+theme_override_styles/hover_pressed = ExtResource("2_l48gv")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_l48gv")
+text = "
+
+"
+icon = ExtResource("2_ouk20")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("22_xmvw1")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="AchievementsButton" unique_id=1687809887]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="icon1" type="Sprite2D" parent="AchievementsButton" unique_id=1879100971]
+modulate = Color(0.12156863, 0.34117648, 0.32941177, 1)
+position = Vector2(82.00001, 62)
+scale = Vector2(2.9531257, 2.890625)
+texture = ExtResource("23_dgv8b")
+
+[node name="icon2" type="Sprite2D" parent="AchievementsButton" unique_id=1890672148]
+modulate = Color(0.12156863, 0.34117648, 0.32941177, 1)
+position = Vector2(82.00005, 62.000034)
+scale = Vector2(2.874998, 2.6874998)
+texture = ExtResource("23_dgv8b")
+
+[node name="playhovermode" type="Label" parent="." unique_id=2058046177]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 456.0
+offset_top = 552.0
+offset_right = 641.0
+offset_bottom = 588.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 45
+text = "NORMAL MODE"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("46_ciy7n")
+
+[node name="playhoverhs" type="Label" parent="." unique_id=2064303965]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 679.0
+offset_top = 552.0
+offset_right = 983.0
+offset_bottom = 588.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 45
+text = "HIGH SCORE: 000000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("47_ciy7n")
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1656684387]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1120.0
+mouse_filter = 2
+color = Color(0.0027354525, 0.018116033, 0.019347303, 1)
+
+[node name="loadinganimation" type="AnimatedSprite2D" parent="." unique_id=204552240]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+z_index = 1001
+position = Vector2(1340, 1020)
+scale = Vector2(7.0625, 7.125)
+sprite_frames = SubResource("SpriteFrames_dgv8b")
+autoplay = "default"
+
+[node name="- - -" type="Node" parent="." unique_id=1506410191]
+
+[node name="overlaydarkening" type="Panel" parent="." unique_id=1650633962]
+unique_name_in_owner = true
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l48gv")
+
+[node name="SETTINGS" type="Control" parent="." unique_id=1127642955]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_top = 1120.0
+offset_right = 1440.0
+offset_bottom = 2240.0
+
+[node name="SettingsBox" type="MarginContainer" parent="SETTINGS" unique_id=891562946]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 140
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 140
+
+[node name="settingsbg" type="Panel" parent="SETTINGS/SettingsBox" unique_id=379802060]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ecwwl")
+
+[node name="settingslabel" type="Label" parent="SETTINGS" unique_id=2048688057]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 192.0
+offset_bottom = 278.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("14_dgv8b")
+theme_override_font_sizes/font_size = 60
+text = "- SETTINGS - "
+horizontal_alignment = 1
+
+[node name="difficultylabel" type="Label" parent="SETTINGS" unique_id=1212033456]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 344.0
+offset_right = 228.0
+offset_bottom = 379.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "Difficulty"
+
+[node name="difficultyselectbutton" type="OptionButton" parent="SETTINGS" unique_id=1757855336]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 240.0
+offset_top = 337.0
+offset_right = 440.0
+offset_bottom = 380.0
+size_flags_horizontal = 0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+selected = 0
+item_count = 2
+popup/item_0/text = "Normal"
+popup/item_0/id = 0
+popup/item_1/text = "Expert"
+popup/item_1/id = 1
+script = ExtResource("10_dwrpx")
+
+[node name="difficultybg" type="Panel" parent="SETTINGS" unique_id=1423011710]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 408.0
+offset_right = 472.0
+offset_bottom = 792.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="normaldesc" type="Label" parent="SETTINGS" unique_id=495415582 groups=["normalelements"]]
+texture_filter = 1
+layout_mode = 0
+offset_left = 120.0
+offset_top = 440.0
+offset_right = 440.0
+offset_bottom = 761.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "- Enemies deal standard
+  amounts of damage
+- Standard number of
+  enemies
+- Heart drops spawn
+  around the map
+- Normal environment
+- 1 perk checkpoint
+- 1.0x score multiplier"
+autowrap_mode = 3
+
+[node name="normaltagline" type="Label" parent="SETTINGS" unique_id=454262265 groups=["normalelements"]]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 814.0
+offset_right = 471.0
+offset_bottom = 895.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 28
+text = " A sweet spot between challenge and amusement. For beginners."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="expertdescbad" type="Label" parent="SETTINGS" unique_id=1838584044 groups=["expertelements"]]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = 120.0
+offset_top = 440.0
+offset_right = 440.0
+offset_bottom = 761.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.77199805, 0.13759658, 0.30671862, 1)
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "- Bats deal increased
+  damage
+- You become easily
+  outnumbered
+- Heart drops are removed
+- A lingering darkness
+  engulfs the land"
+autowrap_mode = 3
+
+[node name="expertdescgood" type="Label" parent="SETTINGS" unique_id=988466934 groups=["expertelements"]]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = 120.0
+offset_top = 440.0
+offset_right = 440.0
+offset_bottom = 761.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.2635402, 0.7139313, 0.23135328, 1)
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "
+
+
+
+
+
+
+- 2 perk checkpoints
+- 1.5x score multiplier"
+autowrap_mode = 3
+
+[node name="experttagline" type="Label" parent="SETTINGS" unique_id=1907954398 groups=["expertelements"]]
+visible = false
+layout_mode = 0
+offset_left = 93.0
+offset_top = 814.0
+offset_right = 471.0
+offset_bottom = 895.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 28
+text = " An extra challenge for the worthy. For those greatly familiar with the game."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="mastervolumelabel" type="Label" parent="SETTINGS" unique_id=526573417]
+texture_filter = 1
+layout_mode = 0
+offset_left = 530.0
+offset_top = 344.0
+offset_right = 713.0
+offset_bottom = 379.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "Master Volume"
+
+[node name="mastervolumepercent" type="Label" parent="SETTINGS" unique_id=1150703160]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1190.0
+offset_top = 345.0
+offset_right = 1357.0
+offset_bottom = 380.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 34
+text = "100%"
+
+[node name="mastervolumeslider" type="HSlider" parent="SETTINGS" unique_id=809316134]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 353.0
+offset_right = 1164.0
+offset_bottom = 369.0
+focus_mode = 0
+value = 100.0
+script = ExtResource("9_h1wq0")
+
+[node name="controlsguide" type="TextureRect" parent="SETTINGS" unique_id=564329686]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("13_jspdm")
+stretch_mode = 5
+
+[node name="a" type="TextureRect" parent="SETTINGS" unique_id=236583146]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("14_guify")
+stretch_mode = 5
+
+[node name="d" type="TextureRect" parent="SETTINGS" unique_id=556908957]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("15_oil5j")
+stretch_mode = 5
+
+[node name="space" type="TextureRect" parent="SETTINGS" unique_id=2034454254]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("16_8uog0")
+stretch_mode = 5
+
+[node name="q" type="TextureRect" parent="SETTINGS" unique_id=2076988324]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("17_k5x1w")
+stretch_mode = 5
+
+[node name="p" type="TextureRect" parent="SETTINGS" unique_id=1282201969]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("18_rkpqm")
+stretch_mode = 5
+
+[node name="shift" type="TextureRect" parent="SETTINGS" unique_id=1187394041]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("19_7wriu")
+stretch_mode = 5
+
+[node name="mouse" type="TextureRect" parent="SETTINGS" unique_id=995258885]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("20_xhgcl")
+stretch_mode = 5
+
+[node name="k" type="TextureRect" parent="SETTINGS" unique_id=451889272]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 1360.0
+offset_bottom = 889.0
+texture = ExtResource("21_8tnp7")
+stretch_mode = 5
+
+[node name="CloseSettingsButton" type="Button" parent="SETTINGS" unique_id=76912937]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1284.0
+offset_top = 173.0
+offset_right = 1364.0
+offset_bottom = 253.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 50
+text = "X"
+script = ExtResource("9_iqepy")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="SETTINGS/CloseSettingsButton" unique_id=393870745]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="DebugSettingsBox" type="MarginContainer" parent="SETTINGS" unique_id=2023700058]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 140
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 140
+
+[node name="settingsbg" type="Panel" parent="SETTINGS/DebugSettingsBox" unique_id=2005614771]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ecwwl")
+
+[node name="DEBUGSETTINGS" type="Control" parent="SETTINGS" unique_id=134963206]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="SETTINGS/DEBUGSETTINGS" unique_id=980380314]
+texture_filter = 1
+position = Vector2(728, 238.00002)
+scale = Vector2(1.2349999, 1.3000005)
+sprite_frames = SubResource("SpriteFrames_i1mhs")
+autoplay = "default"
+frame = 1
+frame_progress = 0.7814919
+
+[node name="settingslabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1141213474]
+texture_filter = 1
+layout_mode = 0
+offset_left = 567.0
+offset_top = 195.0
+offset_right = 893.0
+offset_bottom = 269.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("16_rlonj")
+theme_override_font_sizes/font_size = 20
+text = "-                                                    - "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="debuglabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=2041548666]
+texture_filter = 1
+layout_mode = 0
+offset_left = 560.0
+offset_top = 271.0
+offset_right = 886.0
+offset_bottom = 301.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "DEBUG MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="- - -" type="Node" parent="SETTINGS/DEBUGSETTINGS" unique_id=356862305]
+
+[node name="perklabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1529196160]
+texture_filter = 1
+layout_mode = 0
+offset_left = 112.0
+offset_top = 372.0
+offset_right = 360.0
+offset_bottom = 420.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "MORE PERKS"
+vertical_alignment = 1
+
+[node name="perktoggle" type="CheckButton" parent="SETTINGS/DEBUGSETTINGS" unique_id=1421010795]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 387.0
+offset_top = 375.0
+offset_right = 431.0
+offset_bottom = 399.0
+scale = Vector2(2, 2)
+script = ExtResource("33_su4y3")
+
+[node name="debugoptionbg5" type="Panel" parent="SETTINGS/DEBUGSETTINGS" unique_id=1586179178]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 439.0
+offset_right = 475.0
+offset_bottom = 554.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="perkdesc" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1340276384]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.3647059)
+texture_filter = 1
+layout_mode = 0
+offset_left = 115.0
+offset_top = 453.0
+offset_right = 461.0
+offset_bottom = 539.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "Spawns additional perk coins throughout the map."
+autowrap_mode = 3
+
+[node name="invinclabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1685168340]
+texture_filter = 1
+layout_mode = 0
+offset_left = 548.0
+offset_top = 372.0
+offset_right = 863.0
+offset_bottom = 420.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "INVINCIBLE"
+vertical_alignment = 1
+
+[node name="invinctoggle" type="CheckButton" parent="SETTINGS/DEBUGSETTINGS" unique_id=1624185326]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 822.0
+offset_top = 375.0
+offset_right = 866.0
+offset_bottom = 399.0
+scale = Vector2(2, 2)
+script = ExtResource("36_5e35a")
+
+[node name="debugoptionbg3" type="Panel" parent="SETTINGS/DEBUGSETTINGS" unique_id=825306180]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 439.0
+offset_right = 911.0
+offset_bottom = 554.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="invincdesc" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=834478019]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.3647059)
+texture_filter = 1
+layout_mode = 0
+offset_left = 551.0
+offset_top = 453.0
+offset_right = 897.0
+offset_bottom = 539.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "Turns the protagonist into a god among men."
+autowrap_mode = 3
+
+[node name="heartslabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=527472810]
+texture_filter = 1
+layout_mode = 0
+offset_left = 976.0
+offset_top = 372.0
+offset_right = 1224.0
+offset_bottom = 420.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "MORE HEARTS"
+vertical_alignment = 1
+
+[node name="heartstoggle" type="CheckButton" parent="SETTINGS/DEBUGSETTINGS" unique_id=341720885]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1251.0
+offset_top = 375.0
+offset_right = 1295.0
+offset_bottom = 399.0
+scale = Vector2(2, 2)
+script = ExtResource("37_snj3a")
+
+[node name="debugoptionbg4" type="Panel" parent="SETTINGS/DEBUGSETTINGS" unique_id=1716277501]
+layout_mode = 0
+offset_left = 964.0
+offset_top = 439.0
+offset_right = 1339.0
+offset_bottom = 554.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="heartsdesc" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1950894975]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.3647059)
+texture_filter = 1
+layout_mode = 0
+offset_left = 979.0
+offset_top = 453.0
+offset_right = 1325.0
+offset_bottom = 539.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "Spawns additional heart drops throughout the map. Incompatible with expert mode."
+autowrap_mode = 3
+
+[node name="blindlabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=856284128]
+texture_filter = 1
+layout_mode = 0
+offset_left = 112.0
+offset_top = 599.0
+offset_right = 518.0
+offset_bottom = 647.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "KELLER MODE"
+vertical_alignment = 1
+
+[node name="blindtoggle" type="CheckButton" parent="SETTINGS/DEBUGSETTINGS" unique_id=1772433113]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 385.0
+offset_top = 604.0
+offset_right = 429.0
+offset_bottom = 628.0
+scale = Vector2(2, 2)
+script = ExtResource("35_5e35a")
+
+[node name="debugoptionbg2" type="Panel" parent="SETTINGS/DEBUGSETTINGS" unique_id=385109732]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 666.0
+offset_right = 475.0
+offset_bottom = 781.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="blinddesc" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1904686661]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.3647059)
+texture_filter = 1
+layout_mode = 0
+offset_left = 115.0
+offset_top = 680.0
+offset_right = 461.0
+offset_bottom = 766.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "Makes the protagonist nearly blind and disables all audio."
+autowrap_mode = 3
+
+[node name="julienlabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1207065654]
+texture_filter = 1
+layout_mode = 0
+offset_left = 547.0
+offset_top = 599.0
+offset_right = 795.0
+offset_bottom = 647.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "JULIEN MODE"
+vertical_alignment = 1
+
+[node name="julientoggle" type="CheckButton" parent="SETTINGS/DEBUGSETTINGS" unique_id=731030458]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 821.0
+offset_top = 602.0
+offset_right = 865.0
+offset_bottom = 626.0
+scale = Vector2(2, 2)
+script = ExtResource("34_xisss")
+
+[node name="debugoptionbg" type="Panel" parent="SETTINGS/DEBUGSETTINGS" unique_id=693904870]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 666.0
+offset_right = 910.0
+offset_bottom = 781.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wq0")
+
+[node name="juliendesc" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=958592221]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.3647059)
+texture_filter = 1
+layout_mode = 0
+offset_left = 550.0
+offset_top = 680.0
+offset_right = 896.0
+offset_bottom = 766.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 26
+text = "Turns the protagonist into Julien. Don't question who he is."
+autowrap_mode = 3
+
+[node name="- - - -" type="Node" parent="SETTINGS/DEBUGSETTINGS" unique_id=1905781495]
+
+[node name="enemyspeedlabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=1952478592]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 572.0
+offset_right = 1276.0
+offset_bottom = 620.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 28
+text = "ENEMY SPEED: 1x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="enemyspeedslider" type="HSlider" parent="SETTINGS/DEBUGSETTINGS" unique_id=1590465768]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 969.0
+offset_top = 615.0
+offset_right = 1274.8333
+offset_bottom = 631.0
+scale = Vector2(1.2, 1.2)
+min_value = 100.0
+max_value = 300.0
+value = 100.0
+rounded = true
+tick_count = 3
+ticks_on_borders = true
+script = ExtResource("40_3kqnc")
+
+[node name="playerspeedlabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=2080937803]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 663.0
+offset_right = 1276.0
+offset_bottom = 711.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 28
+text = "PLAYER SPEED: 1x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playerspeedslider" type="HSlider" parent="SETTINGS/DEBUGSETTINGS" unique_id=382438375]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 969.0
+offset_top = 706.0
+offset_right = 1274.8333
+offset_bottom = 722.0
+scale = Vector2(1.2, 1.2)
+min_value = 100.0
+max_value = 300.0
+value = 100.0
+rounded = true
+tick_count = 3
+ticks_on_borders = true
+script = ExtResource("41_28d1b")
+
+[node name="scoremultiplierlabel" type="Label" parent="SETTINGS/DEBUGSETTINGS" unique_id=516565199]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 756.0
+offset_right = 1276.0
+offset_bottom = 804.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 28
+text = "SCORE MULT: 1x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scoremultiplierslider" type="HSlider" parent="SETTINGS/DEBUGSETTINGS" unique_id=1473413215]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 969.0
+offset_top = 799.0
+offset_right = 1274.8333
+offset_bottom = 815.0
+scale = Vector2(1.2, 1.2)
+min_value = 100.0
+max_value = 300.0
+value = 100.0
+rounded = true
+tick_count = 3
+ticks_on_borders = true
+script = ExtResource("42_bhlom")
+
+[node name="DebugMenuButton" type="TextureButton" parent="SETTINGS" unique_id=1834087444]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.023529412)
+z_index = 500
+layout_mode = 0
+offset_left = 1293.0
+offset_top = 879.0
+offset_right = 1370.0
+offset_bottom = 957.0
+focus_mode = 0
+texture_normal = ExtResource("28_xhgcl")
+stretch_mode = 5
+script = ExtResource("29_8tnp7")
+
+[node name="achievementnotification" type="CanvasLayer" parent="." unique_id=1859085049]
+unique_name_in_owner = true
+
+[node name="achtab" type="Control" parent="achievementnotification" unique_id=1891329691]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 347.0
+offset_top = -150.0
+offset_right = -351.0
+offset_bottom = -1151.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="achievementnotification/achtab" unique_id=488530507]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0000305
+offset_right = 2963.9995
+offset_bottom = 361.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("50_dl4fq")
+
+[node name="Label" type="Label" parent="achievementnotification/achtab" unique_id=1952475159]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 14.0
+offset_right = 333.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 25
+text = "ACHIEVEMENT UNLOCKED!"
+
+[node name="achname" type="Label" parent="achievementnotification/achtab" unique_id=499932606]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 81.0
+offset_top = 27.0
+offset_right = 532.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 60
+text = "A MORALES TEST SCORE"
+
+[node name="achicon" type="TextureRect" parent="achievementnotification/achtab" unique_id=2133817289]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 567.0
+offset_top = 9.0
+offset_right = 640.0
+offset_bottom = 77.0
+texture = ExtResource("51_8bala")
+stretch_mode = 5
+
+[node name="openachbutton" type="Button" parent="achievementnotification/achtab" unique_id=667021378]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+script = ExtResource("52_xmvw1")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="achievementnotification/achtab/openachbutton" unique_id=1801608991]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="achievementslayer" type="CanvasLayer" parent="." unique_id=1687846430]
+unique_name_in_owner = true
+layer = 20
+visible = false
+
+[node name="achbgobscure" type="Panel" parent="achievementslayer" unique_id=1716911640]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g8u3f")
+
+[node name="achievements" type="Control" parent="achievementslayer" unique_id=1920287512]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="achbg" type="Panel" parent="achievementslayer/achievements" unique_id=1459098835]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 115.0
+offset_right = 1255.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dl4fq")
+
+[node name="achscrollcont" type="ScrollContainer" parent="achievementslayer/achievements" unique_id=1284386364]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 325.0
+offset_right = 1207.0
+offset_bottom = 979.0
+scroll_vertical_custom_step = 1.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="achievementslist" type="Control" parent="achievementslayer/achievements/achscrollcont" unique_id=407813867]
+custom_minimum_size = Vector2(0, 1500)
+layout_mode = 2
+
+[node name="newbeginning" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1450956719]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/newbeginning" unique_id=1813280089]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/newbeginning" unique_id=567796192]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/newbeginning" unique_id=1462539933]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "A NEW BEGINNING"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/newbeginning" unique_id=502574331]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Beat any level of the game."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/newbeginning" unique_id=1518928849]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("28_xhgcl")
+
+[node name="expertbeat" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1207150784]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 150.0
+offset_bottom = 150.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/expertbeat" unique_id=632116954]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/expertbeat" unique_id=1967469221]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/expertbeat" unique_id=1802554694]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "A WORTHY OPPONENT"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/expertbeat" unique_id=1814576328]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Beat any level of the game on Expert Mode."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/expertbeat" unique_id=496260114]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("53_dgv8b")
+expand_mode = 1
+
+[node name="julienbeat" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1011692082]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 300.0
+offset_bottom = 300.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/julienbeat" unique_id=266998128]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/julienbeat" unique_id=1212611346]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/julienbeat" unique_id=1312234850]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "SKADOOSH"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/julienbeat" unique_id=1049207570]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Beat any level of the game on Julien Mode."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/julienbeat" unique_id=1490341440]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("54_oha31")
+expand_mode = 1
+
+[node name="scoreaddict" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1896961715]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 450.0
+offset_bottom = 450.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/scoreaddict" unique_id=983622837]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/scoreaddict" unique_id=2138611422]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/scoreaddict" unique_id=47393376]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "SCORE ADDICT"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/scoreaddict" unique_id=41549421]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Finish any level with over 175K score."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/scoreaddict" unique_id=2051599342]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("55_41fha")
+expand_mode = 1
+
+[node name="broom" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=731364579]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 600.0
+offset_bottom = 600.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/broom" unique_id=1514533762]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/broom" unique_id=578395083]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/broom" unique_id=1156934366]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "MONSTER BROOM"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/broom" unique_id=1009496964]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Reach a killstreak of 50x or higher."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/broom" unique_id=632665223]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("51_8bala")
+expand_mode = 1
+
+[node name="sweet" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1156470455]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 750.0
+offset_bottom = 750.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/sweet" unique_id=346276692]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/sweet" unique_id=1017582813]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/sweet" unique_id=82955864]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "SWEET RELEASE"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/sweet" unique_id=1125763383]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Die a total of 20 times."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/sweet" unique_id=1671920718]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("56_lrhmk")
+expand_mode = 1
+
+[node name="pity" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=960522717]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 900.0
+offset_bottom = 900.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/pity" unique_id=488951378]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/pity" unique_id=503853928]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/pity" unique_id=1492509652]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "PITY, I PRITHEE"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/pity" unique_id=1170303187]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Complete a level without killing a single Loser."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/pity" unique_id=790616850]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("57_pyh72")
+expand_mode = 1
+
+[node name="uneventful" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=796250013]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 1050.0
+offset_bottom = 1050.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/uneventful" unique_id=1732018762]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/uneventful" unique_id=272070187]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/uneventful" unique_id=1083928247]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "AN UNEVENTFUL FALL"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/uneventful" unique_id=897086838]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Discover a secret perk coin room in Expert Mode."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/uneventful" unique_id=198286092]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("58_ay07r")
+expand_mode = 1
+
+[node name="morales" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=670597365]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 1200.0
+offset_bottom = 1200.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/morales" unique_id=1829591977]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/morales" unique_id=520608]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/morales" unique_id=1331246314]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "MORALES TEST SCORE"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/morales" unique_id=1352123212]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Beat a level with a level score of zero. (NOT a total score)"
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/morales" unique_id=921437870]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("59_5yl2w")
+expand_mode = 1
+
+[node name="graveyard" type="Control" parent="achievementslayer/achievements/achscrollcont/achievementslist" unique_id=1747426576]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.49803922)
+layout_mode = 1
+anchors_preset = 0
+offset_top = 1350.0
+offset_bottom = 1350.0
+
+[node name="achitembg" type="Panel" parent="achievementslayer/achievements/achscrollcont/achievementslist/graveyard" unique_id=2034768873]
+layout_mode = 0
+offset_right = 990.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bala")
+
+[node name="iscompletetext" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/graveyard" unique_id=1305139567]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 17.0
+offset_right = 945.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.7554967, 0.85705, 0.42873672, 1)
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "COMPLETE"
+vertical_alignment = 1
+
+[node name="achtitle" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/graveyard" unique_id=791212113]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 17.0
+offset_right = 422.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 65
+text = "GRAVEYARD OF GODS"
+vertical_alignment = 1
+
+[node name="achdesc" type="Label" parent="achievementslayer/achievements/achscrollcont/achievementslist/graveyard" unique_id=658303120]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 74.0
+offset_right = 388.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("32_m2id3")
+theme_override_font_sizes/font_size = 23
+text = "Discover the true fate of the protagonist."
+
+[node name="achicon" type="TextureRect" parent="achievementslayer/achievements/achscrollcont/achievementslist/graveyard" unique_id=1876551337]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 128.0
+offset_bottom = 126.0
+texture = ExtResource("60_f82t3")
+
+[node name="achievementslabel" type="Label" parent="achievementslayer/achievements" unique_id=310314515]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 163.0
+offset_right = 1027.0
+offset_bottom = 275.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 140
+text = "ACHIEVEMENTS"
+
+[node name="closeachbutton" type="Button" parent="achievementslayer/achievements" unique_id=2135590812]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1135.0
+offset_top = 158.0
+offset_right = 1215.0
+offset_bottom = 238.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xmvw1")
+text = "X"
+script = ExtResource("61_g7tms")
+
+[node name="selectsfxplayer" type="AudioStreamPlayer" parent="achievementslayer/achievements/closeachbutton" unique_id=1618140693]
+stream = ExtResource("4_4hy44")
+volume_db = -6.133
+pitch_scale = 0.9
+
+[node name="- - -2" type="Node" parent="." unique_id=1580146564]
+
+[node name="permaperkshop" type="CanvasLayer" parent="." unique_id=2139511049]
+script = ExtResource("67_f82t3")
+
+[node name="shopbg" type="Control" parent="permaperkshop" unique_id=386471154]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="shopsprite" type="TextureRect" parent="permaperkshop/shopbg" unique_id=169992558]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("67_41fha")
+
+[node name="scrollbarbg" type="TextureRect" parent="permaperkshop/shopbg" unique_id=750995601]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 81.0
+offset_right = 2.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("68_5yl2w")
+
+[node name="scrollbarsword" type="TextureRect" parent="permaperkshop/shopbg" unique_id=591894592]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 81.0
+offset_right = 2.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("69_f82t3")
+
+[node name="scrollbarshield" type="TextureRect" parent="permaperkshop/shopbg" unique_id=1575952602]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 81.0
+offset_right = 2.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("70_g7tms")
+
+[node name="scrollbartalisman" type="TextureRect" parent="permaperkshop/shopbg" unique_id=2108853032]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 81.0
+offset_right = 2.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("71_65flr")
+
+[node name="iteminfobg" type="Panel" parent="permaperkshop/shopbg" unique_id=2097070214]
+layout_mode = 0
+offset_left = 1003.0
+offset_top = 40.0
+offset_right = 1397.0
+offset_bottom = 748.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r8j3e")
+
+[node name="charm_options" type="Control" parent="permaperkshop" unique_id=1687990518]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="onyx" type="Control" parent="permaperkshop/charm_options" unique_id=1546868567]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("74_sowed")
+
+[node name="itemcheck" type="Control" parent="permaperkshop/charm_options/onyx" unique_id=1521377693]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="itemtitle" type="Label" parent="permaperkshop/charm_options/onyx/itemcheck" unique_id=905041253]
+layout_mode = 0
+offset_left = 1038.0
+offset_top = 74.0
+offset_right = 1358.0
+offset_bottom = 194.0
+theme_override_fonts/font = ExtResource("14_dgv8b")
+theme_override_font_sizes/font_size = 40
+text = "CHARM OF ONYX"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="itemdesc" type="Label" parent="permaperkshop/charm_options/onyx/itemcheck" unique_id=815119229]
+layout_mode = 0
+offset_left = 1038.0
+offset_top = 212.0
+offset_right = 1358.0
+offset_bottom = 422.0
+theme_override_fonts/font = ExtResource("45_x5sqb")
+theme_override_font_sizes/font_size = 40
+text = "A charm emblazoned with a bad omen. The wearer bears a musk of infamy and a lust for conflict."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="itemgoodstats" type="RichTextLabel" parent="permaperkshop/charm_options/onyx/itemcheck" unique_id=1354024874]
+layout_mode = 0
+offset_left = 1032.0
+offset_top = 423.0
+offset_right = 1368.0
+offset_bottom = 723.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("45_x5sqb")
+theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
+text = "[color=86dda0]- Kills give you a level-permanent +0.15% movement and attack speed bonus
+- Reaching a kill multiplier of 35 gives you a game-permanent +0.5% movement and attack speed bonus. Applies even without the charm equipped.
+[color=d87b89]- Every hit you take gives you a level-permanent -3% movement and attack speed bonus
+[color=white]Incompatible with other charms"
+
+[node name="physicalitem" type="Control" parent="permaperkshop/charm_options/onyx" unique_id=109229822]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="itemsprite" type="TextureRect" parent="permaperkshop/charm_options/onyx/physicalitem" unique_id=2126084307]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("74_65flr")
+
+[node name="mousedetector" type="Panel" parent="permaperkshop/charm_options/onyx/physicalitem" unique_id=1526954478]
+z_index = 5
+layout_mode = 0
+offset_left = 152.0
+offset_top = 123.0
+offset_right = 306.0
+offset_bottom = 335.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s0svo")
+
+[node name="purchasebar" type="Control" parent="permaperkshop/charm_options/onyx" unique_id=1962608316]
+anchors_preset = 0
+offset_left = 167.0
+offset_top = 348.0
+offset_right = 291.0
+offset_bottom = 411.0
+pivot_offset = Vector2(61, 30)
+mouse_filter = 2
+
+[node name="purchasebg" type="Panel" parent="permaperkshop/charm_options/onyx/purchasebar" unique_id=2028027549]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 7.0
+offset_right = 107.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_leosr")
+
+[node name="price" type="Label" parent="permaperkshop/charm_options/onyx/purchasebar" unique_id=437426359]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 17.0
+offset_right = 105.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("14_dgv8b")
+theme_override_font_sizes/font_size = 26
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="coinsprite" type="TextureRect" parent="permaperkshop/charm_options/onyx/purchasebar" unique_id=1003243750]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 18.0
+offset_right = 57.0
+offset_bottom = 48.0
+mouse_filter = 2
+texture = ExtResource("77_r8j3e")
+
+[node name="99" type="Node" parent="permaperkshop/charm_options/onyx" unique_id=1294494091]
+
+[node name="transitionbars" type="CanvasLayer" parent="." unique_id=1329853305]
+layer = 10000
+visible = false
+
+[node name="transbars" type="Control" parent="transitionbars" unique_id=1475594531]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="bar3" type="Panel" parent="transitionbars/transbars" unique_id=1569247293]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -720.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oha31")
+
+[node name="bar4" type="Panel" parent="transitionbars/transbars" unique_id=1928985754]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oha31")
+
+[node name="loadinganimation" type="AnimatedSprite2D" parent="transitionbars/transbars/bar4" unique_id=1173416429]
+modulate = Color(1, 1, 1, 0)
+z_index = 1001
+position = Vector2(620, 1020)
+scale = Vector2(7.0625, 7.125)
+sprite_frames = SubResource("SpriteFrames_41fha")
+autoplay = "default"
+
+[connection signal="finished" from="menutheme" to="menutheme" method="_on_finished"]
+[connection signal="mouse_entered" from="PlayButton" to="playhovermode" method="_on_play_button_mouse_entered"]
+[connection signal="mouse_entered" from="PlayButton" to="playhoverhs" method="_on_play_button_mouse_entered"]
+[connection signal="mouse_exited" from="PlayButton" to="playhovermode" method="_on_play_button_mouse_exited"]
+[connection signal="mouse_exited" from="PlayButton" to="playhoverhs" method="_on_play_button_mouse_exited"]
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_pressed"]
+[connection signal="timeout" from="PlayButton/fadeouttimer" to="PlayButton" method="_on_fadeouttimer_timeout"]
+[connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
+[connection signal="button_down" from="AchievementsButton" to="AchievementsButton" method="_on_button_down"]
+[connection signal="button_up" from="AchievementsButton" to="AchievementsButton" method="_on_button_up"]
+[connection signal="mouse_entered" from="AchievementsButton" to="AchievementsButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="AchievementsButton" to="AchievementsButton" method="_on_mouse_exited"]
+[connection signal="item_selected" from="SETTINGS/difficultyselectbutton" to="SETTINGS/difficultyselectbutton" method="_on_item_selected"]
+[connection signal="value_changed" from="SETTINGS/mastervolumeslider" to="SETTINGS/mastervolumeslider" method="_on_value_changed"]
+[connection signal="pressed" from="SETTINGS/CloseSettingsButton" to="SETTINGS/CloseSettingsButton" method="_on_pressed"]
+[connection signal="toggled" from="SETTINGS/DEBUGSETTINGS/perktoggle" to="SETTINGS/DEBUGSETTINGS/perktoggle" method="_on_toggled"]
+[connection signal="toggled" from="SETTINGS/DEBUGSETTINGS/invinctoggle" to="SETTINGS/DEBUGSETTINGS/invinctoggle" method="_on_toggled"]
+[connection signal="toggled" from="SETTINGS/DEBUGSETTINGS/heartstoggle" to="SETTINGS/DEBUGSETTINGS/heartstoggle" method="_on_toggled"]
+[connection signal="toggled" from="SETTINGS/DEBUGSETTINGS/blindtoggle" to="SETTINGS/DEBUGSETTINGS/blindtoggle" method="_on_toggled"]
+[connection signal="toggled" from="SETTINGS/DEBUGSETTINGS/julientoggle" to="SETTINGS/DEBUGSETTINGS/julientoggle" method="_on_toggled"]
+[connection signal="value_changed" from="SETTINGS/DEBUGSETTINGS/enemyspeedslider" to="SETTINGS/DEBUGSETTINGS/enemyspeedslider" method="_on_value_changed"]
+[connection signal="value_changed" from="SETTINGS/DEBUGSETTINGS/playerspeedslider" to="SETTINGS/DEBUGSETTINGS/playerspeedslider" method="_on_value_changed"]
+[connection signal="value_changed" from="SETTINGS/DEBUGSETTINGS/scoremultiplierslider" to="SETTINGS/DEBUGSETTINGS/scoremultiplierslider" method="_on_value_changed"]
+[connection signal="button_down" from="SETTINGS/DebugMenuButton" to="SETTINGS/DebugMenuButton" method="_on_button_down"]
+[connection signal="button_up" from="SETTINGS/DebugMenuButton" to="SETTINGS/DebugMenuButton" method="_on_button_up"]
+[connection signal="mouse_entered" from="SETTINGS/DebugMenuButton" to="SETTINGS/DebugMenuButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="SETTINGS/DebugMenuButton" to="SETTINGS/DebugMenuButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="SETTINGS/DebugMenuButton" to="SETTINGS/DebugMenuButton" method="_on_pressed"]
+[connection signal="pressed" from="achievementnotification/achtab/openachbutton" to="achievementnotification/achtab/openachbutton" method="_on_pressed"]
+[connection signal="pressed" from="achievementslayer/achievements/closeachbutton" to="achievementslayer/achievements/closeachbutton" method="_on_pressed"]
+[connection signal="gui_input" from="permaperkshop/charm_options" to="permaperkshop" method="_on_charm_options_gui_input"]

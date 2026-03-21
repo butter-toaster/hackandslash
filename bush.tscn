@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bvhnuh7wbpiff"]
+
+[ext_resource type="Script" uid="uid://cfigkb28v2eh2" path="res://scripts/bush.gd" id="1_ahiml"]
+[ext_resource type="Texture2D" uid="uid://dkii744no3edu" path="res://images/bush1.png" id="2_ki2aw"]
+[ext_resource type="Texture2D" uid="uid://dm2kvav1adhi1" path="res://images/leafsprite.png" id="3_ki2aw"]
+[ext_resource type="Texture2D" uid="uid://3318c0buw3vt" path="res://images/bushfluff.png" id="4_ahiml"]
+[ext_resource type="AudioStream" uid="uid://qlmato5gm5ro" path="res://sfx/coinappearsfx.mp3" id="5_ucvp2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uep05"]
+size = Vector2(18, 18)
+
+[sub_resource type="Gradient" id="Gradient_uxllr"]
+offsets = PackedFloat32Array(0, 0.74898785, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.6509804, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="Gradient_hspfa"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="Gradient_ahiml"]
+offsets = PackedFloat32Array(0, 0.74898785, 1)
+colors = PackedColorArray(0.1882353, 0.35686275, 0.42352942, 1, 0.1882353, 0.35686275, 0.42352942, 0.7058824, 1, 1, 1, 0)
+
+[node name="bush" type="Node2D" unique_id=1069377445]
+modulate = Color(1, 1, 1, 0.827451)
+script = ExtResource("1_ahiml")
+
+[node name="bushsprite" type="Sprite2D" parent="." unique_id=1814148547]
+texture = ExtResource("2_ki2aw")
+
+[node name="bushhittrig" type="Area2D" parent="." unique_id=972247562]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bushhittrig" unique_id=976941572]
+shape = SubResource("RectangleShape2D_uep05")
+debug_color = Color(0, 0.6, 0.69803923, 0)
+
+[node name="tinyfragments" type="CPUParticles2D" parent="." unique_id=186601239]
+position = Vector2(0, 2)
+emitting = false
+amount = 3
+texture = ExtResource("3_ki2aw")
+lifetime = 0.76
+one_shot = true
+explosiveness = 1.0
+randomness = 0.13
+direction = Vector2(0, -2000)
+spread = 54.47
+gravity = Vector2(0, 250)
+initial_velocity_min = 55.42
+initial_velocity_max = 127.96
+angular_velocity_min = 18.82
+angular_velocity_max = 160.0
+scale_amount_min = 1.2
+scale_amount_max = 1.2
+color_ramp = SubResource("Gradient_uxllr")
+
+[node name="bigfragments" type="CPUParticles2D" parent="." unique_id=572166169]
+position = Vector2(0, 2)
+emitting = false
+amount = 2
+texture = ExtResource("4_ahiml")
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+randomness = 0.13
+direction = Vector2(0, -2000)
+spread = 26.23
+gravity = Vector2(0, 380)
+initial_velocity_min = 100.0
+initial_velocity_max = 120.0
+angular_velocity_min = 18.82
+angular_velocity_max = 160.0
+scale_amount_min = 1.2
+scale_amount_max = 1.2
+color_ramp = SubResource("Gradient_hspfa")
+
+[node name="sparks" type="CPUParticles2D" parent="." unique_id=1372074519]
+emitting = false
+amount = 4
+lifetime = 0.15000000000000002
+one_shot = true
+explosiveness = 1.0
+randomness = 0.23
+direction = Vector2(2000, 0)
+spread = 25.0
+gravity = Vector2(0, 1250)
+initial_velocity_min = 380.0
+initial_velocity_max = 400.0
+color_ramp = SubResource("Gradient_ahiml")
+
+[node name="bushsfx" type="AudioStreamPlayer" parent="." unique_id=658124863]
+volume_db = -15.0
+
+[node name="coinappearsfx" type="AudioStreamPlayer" parent="." unique_id=519829380]
+stream = ExtResource("5_ucvp2")
+volume_db = -20.0
+
+[connection signal="area_shape_entered" from="bushhittrig" to="." method="_on_bushhittrig_area_shape_entered"]
