@@ -1,0 +1,83 @@
+extends Label
+var tilt = 0.12
+
+func _ready() -> void:
+	_tiltchange()
+	var splash = randi_range(1, 30)
+	match splash:
+		1:
+			self.text = "First we Hack, then we Slash!"
+		2:
+			self.text = "Now with 30% more unicorns!"
+		2:
+			self.text = "With Losers that look like your parents!"
+		3:
+			self.text = "Hack & Slash: Also try Minecraft!"
+		4:
+			self.text = "Hack & Slash: For the worthy!"
+		5:
+			self.text = "Now with high cortisol!"
+		6:
+			self.text = "Wasting coding time on splash text!"
+		7:
+			self.text = "Have a break, have a butter toast!"
+		8:
+			self.text = "Even more Zach R. Latta!"
+		9:
+			self.text = "Punching toddlers simulator!"
+		10:
+			self.text = "My name is market pliers!"
+		11:
+			self.text = "Voting this a 10 is mandatory to exist!"
+		12:
+			self.text = "Baby shoes for sale: Never born!"
+		13:
+			self.text = "Virtual grass-touching technology!"
+		14:
+			self.text = "Even less Fitness Gram Pacer tests!"
+		15:
+			self.text = "A shrimp fried this!"
+		16:
+			self.text = "Half Life? Why not the full one?"
+		17:
+			self.text = "My divinity is past infinity!"
+		18:
+			self.text = "We love casting spells! Shadow government!"
+		19:
+			self.text = "Have a break, have a butter toast!"
+		20:
+			self.text = "Because you needed the payout!"
+		21:
+			self.text = "Salad dressing? Well then, don't look!"
+		22:
+			self.text = "Dagger Dude was a little devil thing!"
+		23:
+			self.text = "Don't tell me how many calories I need!"
+		24:
+			self.text = "The clock strikes twelve - midnight arrives!"
+		25:
+			self.text = "Licensing the Giant Enemy Spider!"
+		26:
+			self.text = "Better than Portal 3!"
+		27:
+			self.text = "YOU. ARE. A. TOY!"
+		28:
+			self.text = "500 Locust Hordes? for only 2 pounds?"
+		29:
+			self.text = "Caseoh ate my code!"
+		30:
+			self.text = "Honey, where are my pants?"
+
+func _tiltchange() -> void:
+	var t1 = create_tween()
+	t1.tween_property(self, "tilt", -0.12, 1.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_SINE)
+	await t1.finished
+	
+	var t2 = create_tween()
+	t2.tween_property(self, "tilt", 0.12, 1.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_SINE)
+	await t2.finished
+	
+	_tiltchange()
+
+func _process(_delta: float) -> void:
+	self.rotation_degrees += tilt
