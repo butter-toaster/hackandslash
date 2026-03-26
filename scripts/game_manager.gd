@@ -27,7 +27,7 @@ var onyxperma_speed = 0
 var newscore = 0
 var highscore = 0
 var timesdied = 0
-var coinamount = 0
+var coinamount = 99
 	
 var newbeg = false
 var expbeat = false

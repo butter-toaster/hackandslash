@@ -68,7 +68,14 @@ func _ready() -> void:
 			%eperkbox3.monitorable = true
 			%eperkbox4.monitoring = true
 			%eperkbox4.monitorable = true
+	
 
 	await get_tree().create_timer(1).timeout
 	AudioServer.set_bus_volume_db(bus_index, 0)
 	%TRANSHANDLER._barsout()
+	
+	if GameManager.tutorialcango == true:
+		GameManager.tutorialcango = false
+		await get_tree().create_timer(1.5).timeout
+		var p = create_tween()
+		p.tween_property(%tutcont, "position:x", 650, 0.3).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)

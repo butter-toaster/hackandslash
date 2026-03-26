@@ -4,7 +4,7 @@ extends CharacterBody2D
 var basedashbonus = 0
 var MODIFIEDSPEED = 140
 var SPEED = 140
-var ATTACKSPEED = 0.85
+var ATTACKSPEED = 0.6
 const JUMP_VELOCITY = -360.0
 var attackcooldown = true
 var dashcooldown = true
@@ -87,7 +87,7 @@ func _basestatcalculations() -> void:
 		hermesdashbonus = 0
 		
 	MODIFIEDSPEED = (140 * GameManager.debugplayerspeedmodifier) + (GameManager.onyxperma_speed * 140) + basedashbonus + swiftnessfactor + hermesdashbonus + dopespeedbuff - dopecrashdebuff  - guidespeeddebuff + onyxspeedbuff - onyxspeeddebuff + chancespeedbuff + zeusspeedbuff - zeusspeeddebuff + swiftnessfactor
-	ATTACKSPEED =  0.85 - (GameManager.onyxperma_aspeed * 0.85) + flaskasdebuff - sandpaperasbuff - rapierasbuff - dopeaspeedbuff - guideaspeedbuff - onyxaspeedbuff + onyxaspeeddebuff - chanceaspeedbuff - zeusaspeedbuff + omnipotenceaspeeddebuff - quickdrawfactor
+	ATTACKSPEED =  0.6 - (GameManager.onyxperma_aspeed * 0.85) + flaskasdebuff - sandpaperasbuff - rapierasbuff - dopeaspeedbuff - guideaspeedbuff - onyxaspeedbuff + onyxaspeeddebuff - chanceaspeedbuff - zeusaspeedbuff + omnipotenceaspeeddebuff - quickdrawfactor
 	if ATTACKSPEED <= 0.25:
 		ATTACKSPEED = 0.25
 		
