@@ -19,6 +19,11 @@ func _on_button_down() -> void:
 		%shopentersfx.play()
 		%permaperkshop.show()
 		%TRANSHANDLER._barsout()
+		if GameManager.shoptutcango == true:
+			GameManager.shoptutcango = false
+			await get_tree().create_timer(1).timeout
+			var p = create_tween()
+			p.tween_property(%tutcont, "position:x", 650, 0.3).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)
 	else:
 		%achievementslayer.show()
 

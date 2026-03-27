@@ -3,6 +3,7 @@ extends Node
 var haswon = false
 var justwon = false
 var tutorialcango = true
+var shoptutcango = true
 
 var hadnolevelscore = false
 var hadnoloserkills = false
