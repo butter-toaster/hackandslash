@@ -3,7 +3,7 @@ var tilt = 0.12
 
 func _ready() -> void:
 	_tiltchange()
-	var splash = randi_range(1, 30)
+	var splash = randi_range(1, 40)
 	match splash:
 		1:
 			self.text = "First we Hack, then we Slash!"
@@ -50,7 +50,7 @@ func _ready() -> void:
 		21:
 			self.text = "Salad dressing? Well then, don't look!"
 		22:
-			self.text = "Dagger Dude was a little devil thing!"
+			self.text = "Locust was a little devil thing!"
 		23:
 			self.text = "Don't tell me how many calories I need!"
 		24:
@@ -62,11 +62,32 @@ func _ready() -> void:
 		27:
 			self.text = "YOU. ARE. A. TOY!"
 		28:
-			self.text = "500 Locust Hordes? for only 2 pounds?"
+			self.text = "300 Locust Hordes? for only 2 pounds?"
 		29:
 			self.text = "Caseoh ate my code!"
 		30:
 			self.text = "Honey, where are my pants?"
+		31: 
+			self.text = "500 Permaperks..."
+		32: 
+			self.text = "H&N Perks gives you deals on the food you love!"
+		33: 
+			self.text = "Verbalase spent 50K on this!"
+		34: 
+			self.text = "Block. Parry. Dodge."
+		35: 
+			self.text = "I'm the slim Slasher, yes I'm the real Slasher!"
+		36: 
+			self.text = "Sea sells she shells by the shore sea!"
+		37: 
+			self.text = "Now with the Moon Men song during dialogue!"
+		38: 
+			self.text = "DJDUWKD UXOHV!"
+		39: 
+			self.text = "Better than the Evo Pekka meta!"
+		40: 
+			self.text = "Solos the gorilla!"
+			
 
 func _tiltchange() -> void:
 	var t1 = create_tween()
