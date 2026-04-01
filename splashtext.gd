@@ -3,7 +3,7 @@ var tilt = 0.12
 
 func _ready() -> void:
 	_tiltchange()
-	var splash = randi_range(1, 40)
+	var splash = randi_range(1, 64)
 	match splash:
 		1:
 			self.text = "First we Hack, then we Slash!"
@@ -87,7 +87,59 @@ func _ready() -> void:
 			self.text = "Better than the Evo Pekka meta!"
 		40: 
 			self.text = "Solos the gorilla!"
-			
+		41: 
+			self.text = "With Literature Club poem reviews!"
+		42: 
+			self.text = "Rightside up in Australia!"
+		43: 
+			self.text = "Inspired by Hackclub Shower Simulator!"
+		44: 
+			self.text = "Splash text was a worthy addition!"
+		45: 
+			self.text = "Now with twice the Thanksgiving time turkeys!"
+		46: 
+			self.text = "Postponing knee surgery since 1983!"
+		46: 
+			self.text = "The game she tells you not to worry about!"
+		47: 
+			self.text = "Kilometers! The white two!"
+		48: 
+			self.text = "Not sponsored by NordVPN!"
+		49: 
+			self.text = "All three seasons of a manic episode!"
+		50: 
+			self.text = "Hackery and Slashery, all of the time!"
+		51: 
+			self.text = "Lactose intolerant people aren't real!"
+		52: 
+			self.text = "Spencer hates Elvis!"
+		53: 
+			self.text = "Hack and Slash: You da real slash!"
+		54: 
+			self.text = "Praise the almighty Monicookie!"
+		55: 
+			self.text = "Love every neighbor - except Grace!"
+		56: 
+			self.text = "A horse walked into this bar!"
+		56: 
+			self.text = "You can't stand this bizarre adventure!"
+		57: 
+			self.text = "Big pharma has him on a leash!"
+		58: 
+			self.text = "Will Dylan ever finish his passion project?"
+		59: 
+			self.text = "Chiming in with closed doors!"
+		60: 
+			self.text = "Anybody else hear those ominous bells? No?"
+		61: 
+			self.text = "This, prison? To contain me?"
+		62: 
+			self.text = "Now with 2000 more acres of Backrooms!"
+		63: 
+			self.text = "Now with admission into Agartha!"
+		64: 
+			self.text = "Flavortown Flavortown Flavortown!"
+
 
 func _tiltchange() -> void:
 	var t1 = create_tween()
