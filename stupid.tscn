@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c1weeq5vxcouw"]
+
+[ext_resource type="Texture2D" uid="uid://y2t2sbspnavb" path="res://images/crappytitlpng.png" id="1_ifetg"]
+[ext_resource type="FontFile" uid="uid://dhduth8b47aun" path="res://fonts/monogram.ttf" id="1_o13sd"]
+[ext_resource type="Texture2D" uid="uid://durev8ydqlaen" path="res://images/crappyslashpng.png" id="2_mqvda"]
+[ext_resource type="Script" uid="uid://0emvd77s42bc" path="res://jokeplaybutton.gd" id="4_mqvda"]
+
+[node name="Control" type="Control" unique_id=1495865484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=67863353]
+layout_mode = 0
+offset_left = 109.00001
+offset_top = 94.0
+offset_right = 4109.0
+offset_bottom = 4094.0
+rotation = -0.07892114
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_ifetg")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=708244918]
+layout_mode = 0
+offset_left = 919.99994
+offset_top = -2.0000076
+offset_right = 4920.0
+offset_bottom = 3998.0
+rotation = 0.36812463
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_mqvda")
+
+[node name="Label" type="Label" parent="." unique_id=483121599]
+layout_mode = 0
+offset_left = 649.0
+offset_top = 148.0
+offset_right = 1304.0
+offset_bottom = 629.0
+theme_override_fonts/font = ExtResource("1_o13sd")
+theme_override_font_sizes/font_size = 200
+text = "hak and 
+slash"
+horizontal_alignment = 1
+
+[node name="jokeplaybutton" type="Button" parent="." unique_id=488157415]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 664.0
+offset_right = 1216.0
+offset_bottom = 795.0
+theme_override_fonts/font = ExtResource("1_o13sd")
+theme_override_font_sizes/font_size = 100
+text = "play"
+script = ExtResource("4_mqvda")
+
+[node name="returnbutton" type="Button" parent="." unique_id=1074164281]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 827.0
+offset_right = 1216.0
+offset_bottom = 958.0
+theme_override_fonts/font = ExtResource("1_o13sd")
+theme_override_font_sizes/font_size = 100
+text = "return to game"
+script = ExtResource("4_mqvda")
+
+[connection signal="pressed" from="jokeplaybutton" to="jokeplaybutton" method="_on_pressed"]
+[connection signal="pressed" from="returnbutton" to="returnbutton" method="_on_pressed"]
