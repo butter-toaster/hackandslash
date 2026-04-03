@@ -15,7 +15,7 @@ general/updates_per_second=30
 [application]
 
 config/name="hackandslash"
-run/main_scene="uid://cikhtg55kgifi"
+run/main_scene="uid://c1weeq5vxcouw"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/stretch_mode=0

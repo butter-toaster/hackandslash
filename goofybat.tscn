@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://drwo2mupic3jp"]
+
+[ext_resource type="Texture2D" uid="uid://1dudomg5elni" path="res://images/goofybat.png" id="1_2lc0c"]
+[ext_resource type="Script" uid="uid://b47ukmoh7xeh8" path="res://goofyhitsensor.gd" id="2_n3fb4"]
+[ext_resource type="Texture2D" uid="uid://ct62ai4b4mugb" path="res://images/lightball.png" id="3_e33yv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tbphx"]
+
+[node name="goofybat" type="Node2D" unique_id=13917574]
+
+[node name="gbatsprite" type="Sprite2D" parent="." unique_id=448275505]
+texture = ExtResource("1_2lc0c")
+
+[node name="PointLight2D" type="PointLight2D" parent="gbatsprite" unique_id=1442397529]
+z_index = 2
+scale = Vector2(0.2, 0.2)
+energy = 1.89
+range_z_min = 0
+texture = ExtResource("3_e33yv")
+
+[node name="hitsensor" type="Area2D" parent="." unique_id=1082428291]
+script = ExtResource("2_n3fb4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitsensor" unique_id=1852577545]
+shape = SubResource("CircleShape2D_tbphx")
+debug_color = Color(0, 0.6, 0.69803923, 0.047058824)

@@ -1,5 +1,7 @@
 extends Area2D
-
+@onready var deathsfx = $"../../goofyplayer/deathsfx"
+@onready var youlose = $"../../youlose"
+@onready var bgmusic = $"../../bgmusic"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,6 +12,6 @@ func _ready() -> void:
 func _hit(body) -> void:
 	if body.name == "goofyplayer":
 		body.deathlock = true
-		%deathsfx.play()
-		%youlose.show()
-		%bgmusic.stream_paused = true
+		deathsfx.play()
+		youlose.show()
+		bgmusic.stream_paused = true

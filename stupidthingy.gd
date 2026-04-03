@@ -6,4 +6,4 @@ func _ready() -> void:
 	self.get_child(0).pressed.connect(_clicked)
 
 func _clicked() -> void:
-	pass
+	get_tree().change_scene_to_file("res://stupid.tscn")
