@@ -56,7 +56,7 @@ func _ready() -> void:
 		%eheartbox3.monitorable = true
 	if GameManager.extraperkcoins == true:
 		get_tree().call_group("extraperks", "show")
-		if $"..".has_node("%trolleyendedsfx"):
+		if $"..".has_node("%trolleyendedsfx") or $"..".name == "Level3":
 			%eperkbox1.monitoring = true
 			%eperkbox1.monitorable = true
 		else:

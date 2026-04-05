@@ -1,8 +1,10 @@
 extends Control
 var ontexture1 = preload("res://images/level1thumbnail.png")
 var ontexture2 = preload("res://images/level2thumbnail.png")
+var ontexture3 = preload("res://images/level3thumbnail.png")
 var offtexture1 = preload("res://images/level1thumbnail_bw.png")
 var offtexture2 = preload("res://images/level2thumbnail_bw.png")
+var offtexture3 = preload("res://images/level3thumbnail_bw.png")
 var buttoncooldown = true
 var destination = null
 
@@ -18,6 +20,8 @@ func _hoveron() -> void:
 	%itemhoversfx.play()
 	if self.name == "level1":
 		self.get_child(0).get_child(0).texture = ontexture1
+	elif self.name == "level3":
+		self.get_child(0).get_child(0).texture = ontexture3
 	else:
 		self.get_child(0).get_child(0).texture = ontexture2
 
@@ -26,6 +30,8 @@ func _hoveroff() -> void:
 	tweenpos.tween_property(self, "position:y", 0, 0.1).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE).from(-8)
 	if self.name == "level1":
 		self.get_child(0).get_child(0).texture = offtexture1
+	elif self.name == "level3":
+		self.get_child(0).get_child(0).texture = offtexture3
 	else:
 		self.get_child(0).get_child(0).texture = offtexture2
 
@@ -42,6 +48,12 @@ func _selected() -> void:
 				destination = "res://level_2.tscn"
 			else:
 				destination = "res://expert_level_2.tscn"
+		elif self.name == "level3":
+			if GameManager.expertmode == false:
+				destination = "res://level_3.tscn"
+			else:
+				destination = "res://expert_level_3.tscn"
+				
 				
 		buttoncooldown = false
 		$selectsfxplayer.play()

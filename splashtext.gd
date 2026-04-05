@@ -70,7 +70,7 @@ func _ready() -> void:
 		31: 
 			self.text = "500 Permaperks..."
 		32: 
-			self.text = "H&N Perks gives you deals on the food you love!"
+			self.text = "H&S Perks gives you deals on the food you love!"
 		33: 
 			self.text = "Verbalase spent 50K on this!"
 		34: 

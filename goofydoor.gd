@@ -7,7 +7,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		canfx = false
 		%youwin.show()
 		%bgmusic.stream_paused = true
-		var chance = randi_range(3, 5)
+		var chance = randi_range(5, 5)
 		if chance == 5:
 			%winsfx2.play()
 		else:

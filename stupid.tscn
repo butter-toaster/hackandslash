@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dhduth8b47aun" path="res://fonts/monogram.ttf" id="1_o13sd"]
 [ext_resource type="Texture2D" uid="uid://durev8ydqlaen" path="res://images/crappyslashpng.png" id="2_mqvda"]
 [ext_resource type="Script" uid="uid://0emvd77s42bc" path="res://jokeplaybutton.gd" id="4_mqvda"]
+[ext_resource type="AudioStream" uid="uid://c6sx5do63bhr5" path="res://sfx/goofymenuthemesfx.mp3" id="5_0x1qq"]
 
 [node name="Control" type="Control" unique_id=1495865484]
 layout_mode = 3
@@ -66,6 +67,13 @@ theme_override_fonts/font = ExtResource("1_o13sd")
 theme_override_font_sizes/font_size = 100
 text = "return to game"
 script = ExtResource("4_mqvda")
+
+[node name="goofymenutheme" type="AudioStreamPlayer" parent="." unique_id=1206966350]
+stream = ExtResource("5_0x1qq")
+volume_db = 2.433
+pitch_scale = 0.65
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="jokeplaybutton" to="jokeplaybutton" method="_on_pressed"]
 [connection signal="pressed" from="returnbutton" to="returnbutton" method="_on_pressed"]
