@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cy4xa5723cvke"]
+
+[ext_resource type="Script" uid="uid://hcu67feaos3k" path="res://loomershot.gd" id="1_st0na"]
+[ext_resource type="Texture2D" uid="uid://bx7pd33kt0xhq" path="res://images/loomershot.png" id="2_yvivj"]
+[ext_resource type="AudioStream" uid="uid://cispa6evlp5ve" path="res://sfx/loomershootsfx.mp3" id="3_r5vdk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_st0na"]
+radius = 5.0
+
+[node name="loomershot" type="Node2D" unique_id=131737307]
+script = ExtResource("1_st0na")
+
+[node name="shotsprite" type="Sprite2D" parent="." unique_id=130717589]
+texture = ExtResource("2_yvivj")
+
+[node name="collbox" type="Area2D" parent="." unique_id=23840360]
+
+[node name="collshape" type="CollisionShape2D" parent="collbox" unique_id=818217146]
+shape = SubResource("CircleShape2D_st0na")
+
+[node name="loomershoot" type="AudioStreamPlayer2D" parent="." unique_id=694870660]
+stream = ExtResource("3_r5vdk")
+pitch_scale = 2.0
+max_distance = 300.0
+max_polyphony = 20

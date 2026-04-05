@@ -1,6 +1,7 @@
 extends CharacterBody2D
 @onready var player = %Player
 var speed = 80
+var speedstaple = null
 var aggroed = false
 var pitchrandomizer = [0, 0.25, 0.5, 1]
 var sandpaperbonus = 1
@@ -13,6 +14,7 @@ func _ready() -> void:
 	if GameManager.omnipotence == true:
 		omnipbatslowness = 0.8
 	speed = 80 * GameManager.debugenemyspeedmodifier * omnipbatslowness
+	self.speedstaple = speed
 	
 	%sword.body_entered.connect(_swordcontact)
 	%dashsword.body_entered.connect(_swordcontact)
@@ -23,6 +25,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	if aggroed == true:
+		await get_tree().create_timer(0.05).timeout
 		var direction = (player.global_position - global_position).normalized()
 		velocity = direction * speed
 		move_and_slide()
@@ -30,6 +33,8 @@ func _physics_process(_delta: float) -> void:
 func _aggroentered(body) -> void:
 	if body.name == "Player":
 		aggroed = true
+		var t = create_tween()
+		t.tween_property(self, "speed", speedstaple, 0.33).from(0)
 func _aggroexited(body) -> void:
 	if body.name == "Player":
 		aggroed = false

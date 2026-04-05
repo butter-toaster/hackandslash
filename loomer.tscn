@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cg7xqqbk5pvdc"]
+
+[ext_resource type="Texture2D" uid="uid://dmu13vtal1wle" path="res://images/loomer.png" id="1_onx5n"]
+[ext_resource type="Script" uid="uid://dvcqom4s80i8j" path="res://loomer.gd" id="1_utmqx"]
+[ext_resource type="Texture2D" uid="uid://ct62ai4b4mugb" path="res://images/lightball.png" id="3_1ipgg"]
+
+[node name="loomer" type="Node2D" unique_id=319380820]
+script = ExtResource("1_utmqx")
+
+[node name="loomersprite" type="Sprite2D" parent="." unique_id=1478889216]
+texture = ExtResource("1_onx5n")
+
+[node name="chargeup" type="Sprite2D" parent="." unique_id=645317083]
+modulate = Color(0.92941177, 0, 0.27450982, 0)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("3_1ipgg")

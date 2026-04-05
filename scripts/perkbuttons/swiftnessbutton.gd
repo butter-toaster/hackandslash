@@ -16,9 +16,10 @@ func _mouseexit() -> void:
 
 func _on_pressed() -> void:
 	justpressed = true
+	print("pressed")
 	%perkcinemabars._perkcinebarsretreat()
 	%perkselectsfx.play()
-	%Player.swiftnessfactor += 18.2
+	%Player.swiftnessfactor += 9
 	get_tree().call_group("leftperkoptions", "hide")
 	get_tree().call_group("rightperkoptions", "hide")
 	get_tree().call_group("middleperkoptions", "hide")

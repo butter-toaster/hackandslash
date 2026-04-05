@@ -5,11 +5,13 @@ var locimg = preload("res://images/locustsprite.png")
 var losimg = preload("res://images/loser.png")
 var abyssimg = preload("res://images/fate.png")
 var bloodimg = preload("res://images/heartbroken.png")
+var loomimg = preload("res://images/loomer.png")
 var musicbus = AudioServer.get_bus_index("Music")
 var sweeticon = preload("res://images/heartbroken.png")
 var desticon = preload("res://images/vampireheart.png")
 
 func _ondeath(enemy) -> void:
+	%mousestopper.show()
 	var musictween = create_tween()
 	musictween.tween_method(func(value): AudioServer.set_bus_volume_db(musicbus, value), 0, -80.0, 6)
 	await get_tree().create_timer(0.8).timeout
@@ -53,6 +55,10 @@ func _ondeath(enemy) -> void:
 		%cause.text = str(enemy)
 		%causeimg.scale = Vector2(4, 4)
 		%causeimg.texture = bloodimg
+	elif enemy == "Loomer":
+		%cause.text = str(enemy)
+		%causeimg.scale = Vector2(4, 4)
+		%causeimg.texture = loomimg
 		
 	var ctween = create_tween()
 	ctween.tween_property(%deathcontrolnode, "position:y", 0, 0.75).from(800).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)

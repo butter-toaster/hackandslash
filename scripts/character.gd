@@ -278,13 +278,17 @@ func _playerdeath(enemy) -> void:
 		deathmovementlock = true
 		%deathscreeneffect.show()
 		
+		%impactframe.global_position = self.global_position
+		var imptween = create_tween()
+		imptween.tween_property(%impactframe, "modulate", Color("ffffff00"), 0.15).from(Color.WHITE)
+		
 		self.position.y = 1000
 		$deathtollplayer.play()
 		
 		%hitradiancesprite.modulate = Color("ffffff36")
 		%hitradiancesprite.show()
 		var hitvfxtween = create_tween()
-		hitvfxtween.tween_property(%hitradiancesprite, "modulate", Color("ffffff00"), 0.15)
+		hitvfxtween.tween_property(%hitradiancesprite, "modulate", Color("ffffff00"), 0.1)
 		
 		if GameManager.juliensface == true:
 			%julienjumpsprite.show()
